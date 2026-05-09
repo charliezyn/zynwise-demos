@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiely Plumbing | Operations Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: { primary: '#7C3AED', secondary: '#1E293B' } },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <style>
+    @keyframes pulse-dot { 0%,100% { opacity:1 } 50% { opacity:0.4 } }
+    .pulse-dot { animation: pulse-dot 2s ease-in-out infinite }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(12px) } to { opacity:1; transform:translateY(0) } }
+    .fade-up { animation: fadeUp 0.5s ease-out forwards; opacity:0 }
+    .fade-up:nth-child(1) { animation-delay:0.1s }
+    .fade-up:nth-child(2) { animation-delay:0.2s }
+    .fade-up:nth-child(3) { animation-delay:0.3s }
+    .fade-up:nth-child(4) { animation-delay:0.4s }
+    tbody tr:hover { background: rgba(255,255,255,0.03) }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans min-h-screen">
+  <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur border-b border-brand-primary/30 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3"><img src="https://kielyplumbing.com.au/wp-content/uploads/2023/10/KIELY-S1-35-scaled.jpg" alt="Kiely Plumbing" class="h-10 max-w-[180px] object-contain rounded-lg border border-gray-700 bg-white p-1" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="text-xl font-bold hidden" style="color:#7C3AED">Kiely Plumbing</span></div>
+      <h1 class="text-lg font-semibold text-gray-300">Operations Dashboard</h1>
+      <div class="flex items-center gap-3">
+        <span class="flex items-center gap-1.5 text-xs text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-dot"></span> Live
+        </span>
+        <span class="text-sm text-gray-500">09 May 2026</span>
+      </div>
+    </div>
+  </header>
+  <main class="max-w-7xl mx-auto px-6 py-8 space-y-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"><div class="fade-up bg-gray-900 rounded-xl p-6 border border-gray-800">
+  <p class="text-gray-400 text-sm uppercase tracking-wide">Jobs Completed This Week</p>
+  <p class="text-3xl font-bold text-white mt-1">127</p>
+  <div class="flex items-center gap-1 mt-2 text-emerald-400">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+    <span class="text-sm font-medium">+8%</span>
+    <span class="text-xs text-gray-500 ml-1">vs last month</span>
+  </div>
+</div>
+<div class="fade-up bg-gray-900 rounded-xl p-6 border border-gray-800">
+  <p class="text-gray-400 text-sm uppercase tracking-wide">Average Job Value</p>
+  <p class="text-3xl font-bold text-white mt-1">$847</p>
+  <div class="flex items-center gap-1 mt-2 text-red-400">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    <span class="text-sm font-medium">-3%</span>
+    <span class="text-xs text-gray-500 ml-1">vs last month</span>
+  </div>
+</div>
+<div class="fade-up bg-gray-900 rounded-xl p-6 border border-gray-800">
+  <p class="text-gray-400 text-sm uppercase tracking-wide">Tech Utilisation Rate</p>
+  <p class="text-3xl font-bold text-white mt-1">87%</p>
+  <div class="flex items-center gap-1 mt-2 text-emerald-400">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+    <span class="text-sm font-medium">+12%</span>
+    <span class="text-xs text-gray-500 ml-1">vs last month</span>
+  </div>
+</div>
+<div class="fade-up bg-gray-900 rounded-xl p-6 border border-gray-800">
+  <p class="text-gray-400 text-sm uppercase tracking-wide">First-Time Fix Rate</p>
+  <p class="text-3xl font-bold text-white mt-1">94%</p>
+  <div class="flex items-center gap-1 mt-2 text-emerald-400">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+    <span class="text-sm font-medium">+5%</span>
+    <span class="text-xs text-gray-500 ml-1">vs last month</span>
+  </div>
+</div></div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div class="bg-gray-900 rounded-xl border border-gray-800 p-6">
+        <h3 class="text-sm font-medium text-gray-400 mb-4">Weekly Job Volume</h3>
+        <canvas id="chart1" height="200"></canvas>
+      </div>
+      <div class="bg-gray-900 rounded-xl border border-gray-800 p-6">
+        <h3 class="text-sm font-medium text-gray-400 mb-4">Revenue by Service Type ($000s)</h3>
+        <canvas id="chart2" height="200"></canvas>
+      </div>
+    </div>
+    <div class="bg-gray-900 rounded-xl border border-gray-800 overflow-hidden">
+      <div class="px-6 py-4 border-b border-gray-800">
+        <h3 class="text-sm font-medium text-gray-400">Active Jobs - North West Tasmania</h3>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead><tr class="bg-gray-800/50"><th class="px-4 py-3 text-left text-gray-400 text-xs font-medium uppercase tracking-wider">Job ID</th><th class="px-4 py-3 text-left text-gray-400 text-xs font-medium uppercase tracking-wider">Customer</th><th class="px-4 py-3 text-left text-gray-400 text-xs font-medium uppercase tracking-wider">Service Type</th><th class="px-4 py-3 text-left text-gray-400 text-xs font-medium uppercase tracking-wider">Tech Assigned</th><th class="px-4 py-3 text-left text-gray-400 text-xs font-medium uppercase tracking-wider">Status</th></tr></thead>
+          <tbody class="divide-y divide-gray-800/50"><tr><td class="px-4 py-3 text-gray-300">KP-2847</td><td class="px-4 py-3 text-gray-300">Smith Residence</td><td class="px-4 py-3 text-gray-300">Blocked Drain</td><td class="px-4 py-3 text-gray-300">Jake Morrison</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">Complete</span></td></tr>
+<tr><td class="px-4 py-3 text-gray-300">KP-2848</td><td class="px-4 py-3 text-gray-300">Burnie Cafe</td><td class="px-4 py-3 text-gray-300">Hot Water Install</td><td class="px-4 py-3 text-gray-300">Sarah Chen</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-yellow-500/20 text-yellow-400">In Progress</span></td></tr>
+<tr><td class="px-4 py-3 text-gray-300">KP-2849</td><td class="px-4 py-3 text-gray-300">Thompson Home</td><td class="px-4 py-3 text-gray-300">Leak Repair</td><td class="px-4 py-3 text-gray-300">Mike O&#x27;Brien</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">Complete</span></td></tr>
+<tr><td class="px-4 py-3 text-gray-300">KP-2850</td><td class="px-4 py-3 text-gray-300">Ulverstone School</td><td class="px-4 py-3 text-gray-300">Pipe Replacement</td><td class="px-4 py-3 text-gray-300">Dave Wilson</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-red-500/20 text-red-400">Delayed</span></td></tr>
+<tr><td class="px-4 py-3 text-gray-300">KP-2851</td><td class="px-4 py-3 text-gray-300">Jones Property</td><td class="px-4 py-3 text-gray-300">Bathroom Reno</td><td class="px-4 py-3 text-gray-300">Lisa Parker</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">Complete</span></td></tr>
+<tr><td class="px-4 py-3 text-gray-300">KP-2852</td><td class="px-4 py-3 text-gray-300">Devonport Office</td><td class="px-4 py-3 text-gray-300">Tap Installation</td><td class="px-4 py-3 text-gray-300">Tom Richards</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">Complete</span></td></tr>
+<tr><td class="px-4 py-3 text-gray-300">KP-2853</td><td class="px-4 py-3 text-gray-300">Brown Residence</td><td class="px-4 py-3 text-gray-300">Gas Fitting</td><td class="px-4 py-3 text-gray-300">Emma Taylor</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-yellow-500/20 text-yellow-400">Scheduled</span></td></tr>
+<tr><td class="px-4 py-3 text-gray-300">KP-2854</td><td class="px-4 py-3 text-gray-300">Local Pub</td><td class="px-4 py-3 text-gray-300">Emergency Call</td><td class="px-4 py-3 text-gray-300">Jake Morrison</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">Complete</span></td></tr>
+<tr><td class="px-4 py-3 text-gray-300">KP-2855</td><td class="px-4 py-3 text-gray-300">Martin House</td><td class="px-4 py-3 text-gray-300">Drain Cleaning</td><td class="px-4 py-3 text-gray-300">Sarah Chen</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-red-500/20 text-red-400">Overdue</span></td></tr>
+<tr><td class="px-4 py-3 text-gray-300">KP-2856</td><td class="px-4 py-3 text-gray-300">Coastal Motel</td><td class="px-4 py-3 text-gray-300">Pipe Inspection</td><td class="px-4 py-3 text-gray-300">Mike O&#x27;Brien</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-yellow-500/20 text-yellow-400">In Progress</span></td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <footer class="mt-12 py-6 border-t border-gray-800 text-center">
+    <p class="text-gray-500 text-sm">Prepared for Kiely Plumbing by Charlie, Zynwise |
+      <a href="https://zynwise.com" class="text-brand-primary hover:underline">zynwise.com</a></p>
+  </footer>
+  <script>
+    const bp = '#7C3AED';
+    new Chart(document.getElementById('chart1'), {
+      type:'bar', data:{labels:["Jan", "Feb", "Mar", "Apr", "May", "Jun"], datasets:[{data:[98, 106, 118, 124, 119, 127],
+      backgroundColor:bp+'99', borderColor:bp, borderWidth:1, borderRadius:4}]},
+      options:{responsive:true, plugins:{legend:{display:false}},
+      scales:{x:{grid:{color:'#1f2937'},ticks:{color:'#9ca3af'}},
+      y:{grid:{color:'#1f2937'},ticks:{color:'#9ca3af'}}}}
+    });
+    new Chart(document.getElementById('chart2'), {
+      type:'line', data:{labels:["Jan", "Feb", "Mar", "Apr", "May", "Jun"], datasets:[{data:[85, 92, 98, 105, 101, 108],
+      borderColor:bp, backgroundColor:bp+'20', fill:true, tension:0.3,
+      pointRadius:4, pointBackgroundColor:bp}]},
+      options:{responsive:true, plugins:{legend:{display:false}},
+      scales:{x:{grid:{color:'#1f2937'},ticks:{color:'#9ca3af'}},
+      y:{grid:{color:'#1f2937'},ticks:{color:'#9ca3af'}}}}
+    });
+  </script>
+  <img src="https://script.google.com/macros/s/AKfycbxjB6KCQT4aJAdhM6aW5v9zoJFSi6eRp88XnYqKsGbXxRC-GrrLzAnlzERjFYnEi4E/exec?slug=kiit-1b87&company_name=Kiely%20Plumbing&demo_type=dashboard" width="1" height="1" style="position:absolute;opacity:0" alt="">
+</body>
+</html>
