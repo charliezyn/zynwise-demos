@@ -79,6 +79,22 @@
       "path": "skhe-6671",
       "created_date": "2026-05-09",
       "expiry_date": "2026-06-08"
+    },
+    {
+      "company": "Kiely Plumbing",
+      "slug": "kiit-7178",
+      "demo_type": "dashboard",
+      "path": "kiit-7178",
+      "created_date": "2026-05-09",
+      "expiry_date": "2026-06-08"
+    },
+    {
+      "company": "SKJ Capital",
+      "slug": "skhe-a04e",
+      "demo_type": "workflow",
+      "path": "skhe-a04e",
+      "created_date": "2026-05-09",
+      "expiry_date": "2026-06-08"
     }
   ]
 }
