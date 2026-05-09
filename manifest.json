@@ -1,3 +1,20 @@
 {
-  "demos": []
+  "demos": [
+    {
+      "company": "Kiely Plumbing",
+      "slug": "kiit-fdf9",
+      "demo_type": "dashboard",
+      "path": "kiit-fdf9",
+      "created_date": "2026-05-09",
+      "expiry_date": "2026-06-08"
+    },
+    {
+      "company": "SKJ Capital",
+      "slug": "skhe-cf44",
+      "demo_type": "workflow",
+      "path": "skhe-cf44",
+      "created_date": "2026-05-09",
+      "expiry_date": "2026-06-08"
+    }
+  ]
 }
