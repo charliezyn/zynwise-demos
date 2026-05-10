@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Unmarked Group | AI Agent Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { brand: { primary: '#7C3AED', secondary: '#1E293B' } },
+        fontFamily: { sans: ['Inter','system-ui','sans-serif'], mono: ['JetBrains Mono','monospace'] }
+      }}
+    }
+  </script>
+  <style>
+    @keyframes slideRight { from { opacity:0; transform:translateX(-8px) } to { opacity:1; transform:translateX(0) } }
+    .proc-step { opacity:0; animation: slideRight 0.4s ease-out forwards }
+    .proc-step:nth-child(1) { animation-delay:1.0s }
+    .proc-step:nth-child(2) { animation-delay:1.8s }
+    .proc-step:nth-child(3) { animation-delay:2.6s }
+    .proc-step:nth-child(4) { animation-delay:3.4s }
+    .proc-step:nth-child(5) { animation-delay:4.2s }
+    @keyframes outputReveal { from { opacity:0; transform:translateY(8px) } to { opacity:1; transform:translateY(0) } }
+    .output-reveal { opacity:0; animation: outputReveal 0.5s ease-out forwards; animation-delay:5.0s }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans min-h-screen">
+  <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur border-b border-brand-primary/30 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3"><img src="https://theunmarked.com/wp-content/uploads/2024/06/UMG-Logo_Black.png" alt="The Unmarked Group" class="h-10 max-w-[180px] object-contain rounded-lg border border-gray-700 bg-white p-1" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="text-xl font-bold hidden" style="color:#7C3AED">The Unmarked Group</span></div>
+      <h1 class="text-lg font-semibold text-gray-300">AI Agent Demo</h1>
+    </div>
+  </header>
+  <div class="max-w-7xl mx-auto px-6 pt-6">
+    <div class="rounded-lg border border-brand-primary/20 bg-brand-primary/5 px-5 py-3 text-center">
+      <p class="text-sm text-gray-400">Prepared for <span class="font-medium text-white">The Unmarked Group</span> by Charlie, Zynwise |
+        <a href="https://zynwise.com" class="text-brand-primary hover:underline">zynwise.com</a></p>
+    </div>
+  </div>
+  <main class="max-w-7xl mx-auto px-6 py-6">
+    <div class="text-center mb-8">
+      <h2 class="text-2xl font-bold text-white mb-2">Supply Chain Exception Analysis &amp; Action Plan Generation</h2>
+      <p class="text-gray-400 text-sm">Watch an AI agent analyse supply chain disruptions and generate action plans across multiple business units</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-[1fr_280px_1fr] gap-6 items-start">
+      <div class="bg-gray-900 rounded-xl border border-gray-800 overflow-hidden">
+        <div class="px-4 py-3 bg-gray-800/50 border-b border-gray-800 flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-red-500/60"></span>
+          <span class="w-3 h-3 rounded-full bg-yellow-500/60"></span>
+          <span class="w-3 h-3 rounded-full bg-green-500/60"></span>
+          <span class="text-xs text-gray-500 ml-2">Supply Chain Alert Document</span>
+        </div>
+        <div class="p-5"><div class="space-y-3">
+  <h4 class="text-sm font-semibold text-gray-300">Weekly Supply Chain Exception Report - Week 47</h4>
+  <div class="border-t border-gray-800 pt-3">
+    <p class="text-sm text-gray-300 whitespace-pre-line leading-relaxed">CRITICAL ALERTS:
+
+1. Beauty Division: Vitamin C serum supplier (Melbourne) reporting 3-week delay on 2,400 units due to packaging material shortage. Affects Q4 launch timeline.
+
+2. Pet Care: Premium dog food manufacturer in Auckland experiencing quality control issues. 15,000 units quarantined pending lab results.
+
+3. Health &amp; Wellness: Probiotic supplement raw materials delayed at Brisbane port - customs inspection extending clearance by 8 days. Impacts 5 SKUs across AU/NZ markets.
+
+4. Cross-division: Primary logistics partner DataFreight reporting capacity constraints across Sydney-Melbourne corridor affecting all business units.
+
+Inventory levels dropping below reorder points on 12 key SKUs. Customer fulfilment SLA at risk.</p>
+  </div>
+</div></div>
+      </div>
+      <div class="flex flex-col items-center pt-8">
+        <p class="text-xs text-gray-500 uppercase tracking-wider mb-4">Processing</p>
+        <div class="space-y-3 w-full"><div class="proc-step flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full border border-brand-primary/50 flex items-center justify-center flex-shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-brand-primary"></span></span><span class="text-xs text-gray-400">Parsing exception report and categorizing supply chain disruptions...</span></div>
+<div class="proc-step flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full border border-brand-primary/50 flex items-center justify-center flex-shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-brand-primary"></span></span><span class="text-xs text-gray-400">Cross-referencing inventory levels with demand forecasts...</span></div>
+<div class="proc-step flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full border border-brand-primary/50 flex items-center justify-center flex-shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-brand-primary"></span></span><span class="text-xs text-gray-400">Identifying alternative suppliers and logistics pathways...</span></div>
+<div class="proc-step flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full border border-brand-primary/50 flex items-center justify-center flex-shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-brand-primary"></span></span><span class="text-xs text-gray-400">Calculating financial impact across business divisions...</span></div>
+<div class="proc-step flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full border border-brand-primary/50 flex items-center justify-center flex-shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-brand-primary"></span></span><span class="text-xs text-gray-400">Generating prioritized action plans and stakeholder notifications...</span></div></div>
+      </div>
+      <div class="bg-gray-900 rounded-xl border border-brand-primary/40 overflow-hidden output-reveal">
+        <div class="px-4 py-3 bg-brand-primary/10 border-b border-brand-primary/20">
+          <span class="text-sm font-medium text-brand-primary">AI Output</span>
+        </div>
+        <div class="p-5"><div class="space-y-1"><div class="flex justify-between py-2 border-b border-gray-800/50"><span class="text-xs text-gray-400">Critical Issues Identified</span><span class="text-sm font-medium text-white">4 major disruptions</span></div><div class="flex justify-between py-2 border-b border-gray-800/50"><span class="text-xs text-gray-400">Business Units Affected</span><span class="text-sm font-medium text-white">Beauty, Pet Care, Health &amp; Wellness</span></div><div class="flex justify-between py-2 border-b border-gray-800/50"><span class="text-xs text-gray-400">Estimated Revenue Impact</span><span class="text-sm font-medium text-white">$284,000</span></div><div class="flex justify-between py-2 border-b border-gray-800/50"><span class="text-xs text-gray-400">Alternative Suppliers Found</span><span class="text-sm font-medium text-white">3 viable options</span></div><div class="flex justify-between py-2 border-b border-gray-800/50"><span class="text-xs text-gray-400">Action Items Generated</span><span class="text-sm font-medium text-white">8 immediate, 5 medium-term</span></div><div class="flex justify-between py-2 border-b border-gray-800/50"><span class="text-xs text-gray-400">Stakeholders to Notify</span><span class="text-sm font-medium text-white">12 executives across 3 divisions</span></div><div class="flex justify-between py-2 border-b border-gray-800/50"><span class="text-xs text-gray-400">Confidence Level</span><span class="text-sm font-medium text-white">High (91%)</span></div></div></div>
+      </div>
+    </div>
+    <div class="mt-8 bg-gray-900 rounded-xl border border-gray-800 p-6">
+      <div class="grid grid-cols-3 gap-4 text-center">
+        <div>
+          <p class="text-gray-400 text-sm">Manual Process</p>
+          <p class="text-xl font-bold text-red-400">~35 minutes</p>
+        </div>
+        <div>
+          <p class="text-gray-400 text-sm">AI Agent</p>
+          <p class="text-xl font-bold text-emerald-400">~12 seconds</p>
+        </div>
+        <div>
+          <p class="text-gray-400 text-sm">Faster</p>
+          <p class="text-xl font-bold text-brand-primary">99.4%</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="mt-12 py-6"></footer>
+  <script>
+(function(){
+  var u="https://script.google.com/macros/s/AKfycbxrbCXmnUSxULE7UOiSxiYIPCVsvDGhgT1avz1gjr8aqUyQXHOBAoS8lK2cpHWH_YSD/exec";
+  var p=new URLSearchParams(window.location.search);
+  var ref=p.get("ref")||"direct";
+  var tz="";try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone}catch(e){}
+  var dev=/Mobi|Android/i.test(navigator.userAgent)?"mobile":"desktop";
+  var q="slug=thhe-7695&company_name="+encodeURIComponent("The Unmarked Group")+"&demo_type=ai_agent"
+    +"&ref="+ref+"&timezone="+encodeURIComponent(tz)+"&device="+dev;
+  new Image().src=u+"?"+q+"&event=pageview";
+  var start=Date.now();
+  var maxScroll=0;
+  var sent=false;
+  window.addEventListener("scroll",function(){
+    var s=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight)*100;
+    if(s>maxScroll)maxScroll=Math.round(s);
+  });
+  function sendLeave(){
+    if(sent)return;sent=true;
+    var dur=Math.round((Date.now()-start)/1000);
+    var leaveUrl=u+"?"+q+"&event=leave&duration="+dur+"&scroll_depth="+maxScroll;
+    try{fetch(leaveUrl,{keepalive:true,mode:"no-cors"}).catch(function(){})}
+    catch(e){new Image().src=leaveUrl}
+  }
+  window.addEventListener("pagehide",sendLeave);
+  window.addEventListener("beforeunload",sendLeave);
+})();
+</script>
+</body>
+</html>
