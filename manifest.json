@@ -143,6 +143,14 @@
       "path": "rabu-3ac5",
       "created_date": "2026-05-10",
       "expiry_date": "2026-06-09"
+    },
+    {
+      "company": "Artefact Heritage and Environment",
+      "slug": "arai-6e3e",
+      "demo_type": "dashboard",
+      "path": "arai-6e3e",
+      "created_date": "2026-05-10",
+      "expiry_date": "2026-06-09"
     }
   ]
 }
