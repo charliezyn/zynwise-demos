@@ -1,1 +1,52 @@
-{"demos": []}
+{
+  "demos": [
+    {
+      "company": "Boyce Chartered Accountants",
+      "slug": "boai-025d",
+      "demo_type": "ai_agent",
+      "path": "boai-025d",
+      "created_date": "2026-05-10",
+      "expiry_date": "2026-06-09"
+    },
+    {
+      "company": "Ryman Healthcare",
+      "slug": "ryai-ec0d",
+      "demo_type": "ai_agent",
+      "path": "ryai-ec0d",
+      "created_date": "2026-05-10",
+      "expiry_date": "2026-06-09"
+    },
+    {
+      "company": "Artefact Heritage and Environment",
+      "slug": "arai-7036",
+      "demo_type": "dashboard",
+      "path": "arai-7036",
+      "created_date": "2026-05-10",
+      "expiry_date": "2026-06-09"
+    },
+    {
+      "company": "DiJones Real Estate",
+      "slug": "dicr-1e8a",
+      "demo_type": "dashboard",
+      "path": "dicr-1e8a",
+      "created_date": "2026-05-10",
+      "expiry_date": "2026-06-09"
+    },
+    {
+      "company": "Enkisonics Pty Ltd",
+      "slug": "enai-d3a2",
+      "demo_type": "dashboard",
+      "path": "enai-d3a2",
+      "created_date": "2026-05-10",
+      "expiry_date": "2026-06-09"
+    },
+    {
+      "company": "Plenti",
+      "slug": "plbu-636f",
+      "demo_type": "workflow",
+      "path": "plbu-636f",
+      "created_date": "2026-05-10",
+      "expiry_date": "2026-06-09"
+    }
+  ]
+}

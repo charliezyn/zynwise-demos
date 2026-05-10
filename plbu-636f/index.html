@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plenti | Automation Opportunity</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { brand: { primary: '#7C3AED', secondary: '#1E293B' } },
+        fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+      }}
+    }
+  </script>
+  <style>
+    @keyframes fadeUp { from { opacity:0; transform:translateY(16px) } to { opacity:1; transform:translateY(0) } }
+    .step-fade { opacity:0; animation: fadeUp 0.4s ease-out forwards }
+    @keyframes countUp { from { opacity:0; transform:scale(0.8) } to { opacity:1; transform:scale(1) } }
+    .stat-pop { animation: countUp 0.5s ease-out forwards; opacity:0 }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans min-h-screen">
+  <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur border-b border-brand-primary/30 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3"><img src="https://cdn.prod.website-files.com/678e0e7049b23fa262dbfe16/69d86396a6c540bed6bc2437_689c71fd81b8d0ff49f0fa28_man%20with%20dog%20and%20car%20at%20beach%201.avif" alt="Plenti" class="h-10 max-w-[180px] object-contain rounded-lg border border-gray-700 bg-white p-1" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="text-xl font-bold hidden" style="color:#7C3AED">Plenti</span></div>
+      <h1 class="text-lg font-semibold text-gray-300">Automation Opportunity</h1>
+      <span class="text-sm text-gray-500">10 May 2026</span>
+    </div>
+  </header>
+  <main class="max-w-7xl mx-auto px-6 py-8">
+    <div class="text-center mb-10">
+      <h2 class="text-2xl font-bold text-white mb-2">How Plenti Can Save 28 Hours Per Week</h2>
+      <p class="text-gray-400">Based on $75/hr average operational cost (28 hrs × 48 weeks × $75)</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+      <div>
+        <h3 class="text-sm font-semibold text-red-400 uppercase tracking-wider mb-6 text-center">Current Process</h3>
+        <div class="space-y-4"><div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.1s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Loan Application Data Entry</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">20 min per application</span>
+  </div>
+  <p class="text-xs text-gray-400">Staff manually extract customer data from various application channels and input into loan management system</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Operations team</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.25s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Customer Service Ticket Processing</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">8 min per enquiry</span>
+  </div>
+  <p class="text-xs text-gray-400">Manual review and categorisation of customer enquiries from multiple channels before routing to appropriate teams</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Customer service team</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.4s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Collections Workflow Management</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">25 min per account</span>
+  </div>
+  <p class="text-xs text-gray-400">Business analysts manually review overdue accounts and create action plans for collections team</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Business analysts</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.5499999999999999s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Partner Sales Enablement Reporting</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">2 hrs per report</span>
+  </div>
+  <p class="text-xs text-gray-400">Compile weekly performance reports for automotive and solar partners from multiple data sources</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Business analysts</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.7s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Complaint Resolution Tracking</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">15 min per complaint</span>
+  </div>
+  <p class="text-xs text-gray-400">Manual logging and status tracking of customer complaints across departments with regular follow-ups</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Operations coordinators</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.85s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Process Performance Monitoring</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">3 hrs per week</span>
+  </div>
+  <p class="text-xs text-gray-400">Business analysts manually collect feedback and performance metrics from various operational workflows for improvement analysis</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Business analysts</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.9999999999999999s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Investor Reporting Compilation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">4 hrs per month</span>
+  </div>
+  <p class="text-xs text-gray-400">Monthly compilation of loan performance data and investor returns from multiple systems for 27,000+ investors</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Finance team</p>
+</div></div>
+      </div>
+      <div>
+        <h3 class="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-6 text-center">Automated Process</h3>
+        <div class="space-y-4"><div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.1s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Loan Application Data Entry</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">2 min</span>
+  </div>
+  <p class="text-xs text-gray-400">Application forms auto-parsed, customer data validated and populated directly into loan system with credit checks triggered</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Make + Databricks API</span>
+    <span class="text-xs text-emerald-500">Saves 6 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.25s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Customer Service Ticket Processing</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">1 min</span>
+  </div>
+  <p class="text-xs text-gray-400">AI agent analyses enquiry content, categorises by type, and routes to appropriate specialist with customer history attached</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Amazon Connect + Claude API</span>
+    <span class="text-xs text-emerald-500">Saves 5 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.4s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Collections Workflow Management</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">3 min</span>
+  </div>
+  <p class="text-xs text-gray-400">System automatically scores accounts by risk level, generates personalised contact sequences and schedules follow-up actions</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Zapier + Databricks ML</span>
+    <span class="text-xs text-emerald-500">Saves 7 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.5499999999999999s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Partner Sales Enablement Reporting</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">10 min</span>
+  </div>
+  <p class="text-xs text-gray-400">Automated data aggregation from all systems with dynamic dashboards and weekly reports sent to partners automatically</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">n8n + Google Suite API</span>
+    <span class="text-xs text-emerald-500">Saves 3.5 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.7s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Complaint Resolution Tracking</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">3 min</span>
+  </div>
+  <p class="text-xs text-gray-400">Complaints auto-logged with priority scoring, stakeholder notifications sent and resolution progress tracked with escalation triggers</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Zoho + Make workflows</span>
+    <span class="text-xs text-emerald-500">Saves 3 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.85s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Process Performance Monitoring</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">30 min per week</span>
+  </div>
+  <p class="text-xs text-gray-400">Real-time dashboards track KPIs across all processes with automated anomaly detection and improvement recommendations</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Databricks + Notion API</span>
+    <span class="text-xs text-emerald-500">Saves 2.5 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.9999999999999999s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Investor Reporting Compilation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">30 min per month</span>
+  </div>
+  <p class="text-xs text-gray-400">Automated data extraction and report generation with personalised investor statements distributed via email</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Power Automate + Databricks</span>
+    <span class="text-xs text-emerald-500">Saves 1 hr/week</span>
+  </div>
+</div></div>
+      </div>
+    </div>
+    <div class="bg-gray-900 rounded-xl border border-brand-primary/30 p-8">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        <div class="stat-pop" style="animation-delay:0.8s">
+          <p class="text-gray-400 text-sm mb-1">Hours Saved Per Week</p>
+          <p class="text-3xl font-bold text-brand-primary">28</p>
+        </div>
+        <div class="stat-pop" style="animation-delay:1.0s">
+          <p class="text-gray-400 text-sm mb-1">Annual Value</p>
+          <p class="text-3xl font-bold text-emerald-400">$100,800</p>
+        </div>
+        <div class="stat-pop" style="animation-delay:1.2s">
+          <p class="text-gray-400 text-sm mb-1">Processes Automated</p>
+          <p class="text-3xl font-bold text-white">7</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="mt-12 py-6 border-t border-gray-800 text-center">
+    <p class="text-gray-500 text-sm">Prepared for Plenti by Charlie, Zynwise |
+      <a href="https://zynwise.com" class="text-brand-primary hover:underline">zynwise.com</a></p>
+  </footer>
+  <script>
+(function(){
+  var u="https://script.google.com/macros/s/AKfycbzwHbqoKPGFLNp5qFvHAYoN87nOFg92vjSB4d-7yVxiPnjgXiRgmnF8S4yuTcJCBO5C/exec";
+  var p=new URLSearchParams(window.location.search);
+  var ref=p.get("ref")||"direct";
+  var tz="";try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone}catch(e){}
+  var dev=/Mobi|Android/i.test(navigator.userAgent)?"mobile":"desktop";
+  var q="slug=plbu-636f&company_name="+encodeURIComponent("Plenti")+"&demo_type=workflow"
+    +"&ref="+ref+"&timezone="+encodeURIComponent(tz)+"&device="+dev;
+  new Image().src=u+"?"+q+"&event=pageview";
+  var start=Date.now();
+  var maxScroll=0;
+  var sent=false;
+  window.addEventListener("scroll",function(){
+    var s=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight)*100;
+    if(s>maxScroll)maxScroll=Math.round(s);
+  });
+  function sendLeave(){
+    if(sent)return;sent=true;
+    var dur=Math.round((Date.now()-start)/1000);
+    var leaveUrl=u+"?"+q+"&event=leave&duration="+dur+"&scroll_depth="+maxScroll;
+    try{fetch(leaveUrl,{keepalive:true,mode:"no-cors"}).catch(function(){})}
+    catch(e){new Image().src=leaveUrl}
+  }
+  window.addEventListener("pagehide",sendLeave);
+  window.addEventListener("beforeunload",sendLeave);
+})();
+</script>
+</body>
+</html>
