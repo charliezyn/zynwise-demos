@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kogan.com | AI Agent Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { brand: { primary: '#7C3AED', secondary: '#1E293B' } },
+        fontFamily: { sans: ['Inter','system-ui','sans-serif'], mono: ['JetBrains Mono','monospace'] }
+      }}
+    }
+  </script>
+  <style>
+    @keyframes slideRight { from { opacity:0; transform:translateX(-8px) } to { opacity:1; transform:translateX(0) } }
+    .proc-step { opacity:0; animation: slideRight 0.4s ease-out forwards }
+    .proc-step:nth-child(1) { animation-delay:1.0s }
+    .proc-step:nth-child(2) { animation-delay:1.8s }
+    .proc-step:nth-child(3) { animation-delay:2.6s }
+    .proc-step:nth-child(4) { animation-delay:3.4s }
+    .proc-step:nth-child(5) { animation-delay:4.2s }
+    @keyframes outputReveal { from { opacity:0; transform:translateY(8px) } to { opacity:1; transform:translateY(0) } }
+    .output-reveal { opacity:0; animation: outputReveal 0.5s ease-out forwards; animation-delay:5.0s }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans min-h-screen">
+  <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur border-b border-brand-primary/30 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3"><span class="text-xl font-bold" style="color:#7C3AED">Kogan.com</span></div>
+      <h1 class="text-lg font-semibold text-gray-300">AI Agent Demo</h1>
+      <span class="text-sm text-gray-500">10 May 2026</span>
+    </div>
+  </header>
+  <main class="max-w-7xl mx-auto px-6 py-8">
+    <div class="text-center mb-8">
+      <h2 class="text-2xl font-bold text-white mb-2">Customer Inquiry Triage &amp; Product Matching</h2>
+      <p class="text-gray-400 text-sm">Watch an AI agent analyze customer inquiries and match them with optimal products in seconds</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-[1fr_280px_1fr] gap-6 items-start">
+      <div class="bg-gray-900 rounded-xl border border-gray-800 overflow-hidden">
+        <div class="px-4 py-3 bg-gray-800/50 border-b border-gray-800 flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-red-500/60"></span>
+          <span class="w-3 h-3 rounded-full bg-yellow-500/60"></span>
+          <span class="w-3 h-3 rounded-full bg-green-500/60"></span>
+          <span class="text-xs text-gray-500 ml-2">Customer Support Email</span>
+        </div>
+        <div class="p-5"><div class="space-y-3">
+  <div class="flex items-center gap-2 text-xs text-gray-400">
+    <span class="font-medium text-gray-300">From:</span> james.chen@gmail.com
+  </div>
+  <div class="flex items-center gap-2 text-xs text-gray-400">
+    <span class="font-medium text-gray-300">Subject:</span> Need help finding a good TV for gaming
+  </div>
+  <div class="border-t border-gray-800 pt-3 mt-3">
+    <p class="text-sm text-gray-300 whitespace-pre-line leading-relaxed">Hi,
+
+I&#x27;m looking for a TV for my new apartment. Main use will be gaming on PS5 and some Netflix. Budget around $800-1200. Room is pretty bright during the day. Not sure about size but wall space is about 150cm wide.
+
+Can you recommend something good?
+
+Cheers,
+James</p>
+  </div>
+</div></div>
+      </div>
+      <div class="flex flex-col items-center pt-8">
+        <p class="text-xs text-gray-500 uppercase tracking-wider mb-4">Processing</p>
+        <div class="space-y-3 w-full"><div class="proc-step flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full border border-brand-primary/50 flex items-center justify-center flex-shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-brand-primary"></span></span><span class="text-xs text-gray-400">Analyzing customer requirements and extracting key criteria...</span></div>
+<div class="proc-step flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full border border-brand-primary/50 flex items-center justify-center flex-shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-brand-primary"></span></span><span class="text-xs text-gray-400">Identifying gaming-specific technical requirements...</span></div>
+<div class="proc-step flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full border border-brand-primary/50 flex items-center justify-center flex-shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-brand-primary"></span></span><span class="text-xs text-gray-400">Querying product catalog with price and feature filters...</span></div>
+<div class="proc-step flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full border border-brand-primary/50 flex items-center justify-center flex-shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-brand-primary"></span></span><span class="text-xs text-gray-400">Ranking products by customer fit score...</span></div>
+<div class="proc-step flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full border border-brand-primary/50 flex items-center justify-center flex-shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-brand-primary"></span></span><span class="text-xs text-gray-400">Generating personalized product recommendations...</span></div></div>
+      </div>
+      <div class="bg-gray-900 rounded-xl border border-brand-primary/40 overflow-hidden output-reveal">
+        <div class="px-4 py-3 bg-brand-primary/10 border-b border-brand-primary/20">
+          <span class="text-sm font-medium text-brand-primary">AI Output</span>
+        </div>
+        <div class="p-5"><div class="space-y-1"><div class="flex justify-between py-2 border-b border-gray-800/50"><span class="text-xs text-gray-400">Customer Intent</span><span class="text-sm font-medium text-white">Product Recommendation - Gaming TV</span></div><div class="flex justify-between py-2 border-b border-gray-800/50"><span class="text-xs text-gray-400">Budget Range</span><span class="text-sm font-medium text-white">$800 - $1,200 AUD</span></div><div class="flex justify-between py-2 border-b border-gray-800/50"><span class="text-xs text-gray-400">Key Requirements</span><span class="text-sm font-medium text-white">PS5 gaming, bright room, ~55-65 inch</span></div><div class="flex justify-between py-2 border-b border-gray-800/50"><span class="text-xs text-gray-400">Top Match</span><span class="text-sm font-medium text-white">Samsung 55&quot; QLED Q70C - $999</span></div><div class="flex justify-between py-2 border-b border-gray-800/50"><span class="text-xs text-gray-400">Alternative</span><span class="text-sm font-medium text-white">LG 55&quot; OLED A3 - $1,149</span></div><div class="flex justify-between py-2 border-b border-gray-800/50"><span class="text-xs text-gray-400">Confidence</span><span class="text-sm font-medium text-white">High (92%)</span></div><div class="flex justify-between py-2 border-b border-gray-800/50"><span class="text-xs text-gray-400">Next Step</span><span class="text-sm font-medium text-white">Send personalized product comparison email</span></div></div></div>
+      </div>
+    </div>
+    <div class="mt-8 bg-gray-900 rounded-xl border border-gray-800 p-6">
+      <div class="grid grid-cols-3 gap-4 text-center">
+        <div>
+          <p class="text-gray-400 text-sm">Manual Process</p>
+          <p class="text-xl font-bold text-red-400">~18 minutes</p>
+        </div>
+        <div>
+          <p class="text-gray-400 text-sm">AI Agent</p>
+          <p class="text-xl font-bold text-emerald-400">~12 seconds</p>
+        </div>
+        <div>
+          <p class="text-gray-400 text-sm">Faster</p>
+          <p class="text-xl font-bold text-brand-primary">98.9%</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="mt-12 py-6 border-t border-gray-800 text-center">
+    <p class="text-gray-500 text-sm">Prepared for Kogan.com by Charlie, Zynwise |
+      <a href="https://zynwise.com" class="text-brand-primary hover:underline">zynwise.com</a></p>
+  </footer>
+  <script>
+(function(){
+  var u="https://script.google.com/macros/s/AKfycbzwHbqoKPGFLNp5qFvHAYoN87nOFg92vjSB4d-7yVxiPnjgXiRgmnF8S4yuTcJCBO5C/exec";
+  var p=new URLSearchParams(window.location.search);
+  var ref=p.get("ref")||"direct";
+  var tz="";try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone}catch(e){}
+  var dev=/Mobi|Android/i.test(navigator.userAgent)?"mobile":"desktop";
+  var q="slug=koai-5891&company_name="+encodeURIComponent("Kogan.com")+"&demo_type=ai_agent"
+    +"&ref="+ref+"&timezone="+encodeURIComponent(tz)+"&device="+dev;
+  new Image().src=u+"?"+q+"&event=pageview";
+  var start=Date.now();
+  var maxScroll=0;
+  var sent=false;
+  window.addEventListener("scroll",function(){
+    var s=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight)*100;
+    if(s>maxScroll)maxScroll=Math.round(s);
+  });
+  function sendLeave(){
+    if(sent)return;sent=true;
+    var dur=Math.round((Date.now()-start)/1000);
+    var leaveUrl=u+"?"+q+"&event=leave&duration="+dur+"&scroll_depth="+maxScroll;
+    try{fetch(leaveUrl,{keepalive:true,mode:"no-cors"}).catch(function(){})}
+    catch(e){new Image().src=leaveUrl}
+  }
+  window.addEventListener("pagehide",sendLeave);
+  window.addEventListener("beforeunload",sendLeave);
+})();
+</script>
+</body>
+</html>
