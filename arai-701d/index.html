@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artefact Heritage and Environment | Operations Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: { primary: '#7C3AED', secondary: '#1E293B' } },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <style>
+    @keyframes pulse-dot { 0%,100% { opacity:1 } 50% { opacity:0.4 } }
+    .pulse-dot { animation: pulse-dot 2s ease-in-out infinite }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(12px) } to { opacity:1; transform:translateY(0) } }
+    .fade-up { animation: fadeUp 0.5s ease-out forwards; opacity:0 }
+    .fade-up:nth-child(1) { animation-delay:0.1s }
+    .fade-up:nth-child(2) { animation-delay:0.2s }
+    .fade-up:nth-child(3) { animation-delay:0.3s }
+    .fade-up:nth-child(4) { animation-delay:0.4s }
+    tbody tr:hover { background: rgba(255,255,255,0.03) }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans min-h-screen">
+  <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur border-b border-brand-primary/30 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3"><img src="https://cdn.moble.com/w/2441/453601/file/artefact-logo.png" alt="Artefact Heritage and Environment" class="h-10 max-w-[180px] object-contain rounded-lg border border-gray-700 bg-white p-1" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="text-xl font-bold hidden" style="color:#7C3AED">Artefact Heritage and Environment</span></div>
+      <h1 class="text-lg font-semibold text-gray-300">Operations Dashboard</h1>
+      <div class="flex items-center gap-3">
+        <span class="flex items-center gap-1.5 text-xs text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-dot"></span> Live
+        </span>
+      </div>
+    </div>
+  </header>
+  <div class="max-w-7xl mx-auto px-6 pt-6">
+    <div class="rounded-lg border border-brand-primary/20 bg-brand-primary/5 px-5 py-3 text-center">
+      <p class="text-sm text-gray-400">Prepared for <span class="font-medium text-white">Artefact Heritage and Environment</span> by Charlie, Zynwise |
+        <a href="https://zynwise.com" class="text-brand-primary hover:underline">zynwise.com</a></p>
+    </div>
+  </div>
+  <main class="max-w-7xl mx-auto px-6 py-6 space-y-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"><div class="fade-up bg-gray-900 rounded-xl p-6 border border-gray-800">
+  <p class="text-gray-400 text-sm uppercase tracking-wide">Active Heritage Projects</p>
+  <p class="text-3xl font-bold text-white mt-1">47</p>
+  <div class="flex items-center gap-1 mt-2 text-emerald-400">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+    <span class="text-sm font-medium">+12%</span>
+    <span class="text-xs text-gray-500 ml-1">vs last month</span>
+  </div>
+</div>
+<div class="fade-up bg-gray-900 rounded-xl p-6 border border-gray-800">
+  <p class="text-gray-400 text-sm uppercase tracking-wide">Report Turnaround Time</p>
+  <p class="text-3xl font-bold text-white mt-1">8.3 days</p>
+  <div class="flex items-center gap-1 mt-2 text-emerald-400">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+    <span class="text-sm font-medium">-15%</span>
+    <span class="text-xs text-gray-500 ml-1">vs last month</span>
+  </div>
+</div>
+<div class="fade-up bg-gray-900 rounded-xl p-6 border border-gray-800">
+  <p class="text-gray-400 text-sm uppercase tracking-wide">Client Satisfaction Score</p>
+  <p class="text-3xl font-bold text-white mt-1">4.7/5</p>
+  <div class="flex items-center gap-1 mt-2 text-emerald-400">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+    <span class="text-sm font-medium">+6%</span>
+    <span class="text-xs text-gray-500 ml-1">vs last month</span>
+  </div>
+</div>
+<div class="fade-up bg-gray-900 rounded-xl p-6 border border-gray-800">
+  <p class="text-gray-400 text-sm uppercase tracking-wide">Site Assessment Efficiency</p>
+  <p class="text-3xl font-bold text-white mt-1">85%</p>
+  <div class="flex items-center gap-1 mt-2 text-red-400">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    <span class="text-sm font-medium">-3%</span>
+    <span class="text-xs text-gray-500 ml-1">vs last month</span>
+  </div>
+</div></div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div class="bg-gray-900 rounded-xl border border-gray-800 p-6">
+        <h3 class="text-sm font-medium text-gray-400 mb-4">Projects by Service Type</h3>
+        <canvas id="chart1" height="200"></canvas>
+      </div>
+      <div class="bg-gray-900 rounded-xl border border-gray-800 p-6">
+        <h3 class="text-sm font-medium text-gray-400 mb-4">Monthly Project Completions</h3>
+        <canvas id="chart2" height="200"></canvas>
+      </div>
+    </div>
+    <div class="bg-gray-900 rounded-xl border border-gray-800 overflow-hidden">
+      <div class="px-6 py-4 border-b border-gray-800">
+        <h3 class="text-sm font-medium text-gray-400">Current Heritage Projects</h3>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead><tr class="bg-gray-800/50"><th class="px-4 py-3 text-left text-gray-400 text-xs font-medium uppercase tracking-wider">Project Name</th><th class="px-4 py-3 text-left text-gray-400 text-xs font-medium uppercase tracking-wider">Client</th><th class="px-4 py-3 text-left text-gray-400 text-xs font-medium uppercase tracking-wider">Service Type</th><th class="px-4 py-3 text-left text-gray-400 text-xs font-medium uppercase tracking-wider">Status</th><th class="px-4 py-3 text-left text-gray-400 text-xs font-medium uppercase tracking-wider">Due Date</th></tr></thead>
+          <tbody class="divide-y divide-gray-800/50"><tr><td class="px-4 py-3 text-gray-300">Pyrmont Bridge Assessment</td><td class="px-4 py-3 text-gray-300">Transport NSW</td><td class="px-4 py-3 text-gray-300">Built Heritage</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">On Track</span></td><td class="px-4 py-3 text-gray-300">15 Aug 2024</td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Barangaroo Excavation</td><td class="px-4 py-3 text-gray-300">Lendlease</td><td class="px-4 py-3 text-gray-300">Archaeological</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">On Track</span></td><td class="px-4 py-3 text-gray-300">22 Aug 2024</td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Hunter Valley Survey</td><td class="px-4 py-3 text-gray-300">Rio Tinto</td><td class="px-4 py-3 text-gray-300">Environmental</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-yellow-500/20 text-yellow-400">At Risk</span></td><td class="px-4 py-3 text-gray-300">28 Jul 2024</td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Central Coast Planning</td><td class="px-4 py-3 text-gray-300">Central Coast Council</td><td class="px-4 py-3 text-gray-300">Planning Support</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">On Track</span></td><td class="px-4 py-3 text-gray-300">5 Sep 2024</td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Bathurst Heritage Study</td><td class="px-4 py-3 text-gray-300">Bathurst Regional Council</td><td class="px-4 py-3 text-gray-300">Built Heritage</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">On Track</span></td><td class="px-4 py-3 text-gray-300">12 Sep 2024</td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Parramatta River Sites</td><td class="px-4 py-3 text-gray-300">Sydney Metro</td><td class="px-4 py-3 text-gray-300">Archaeological</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-red-500/20 text-red-400">Delayed</span></td><td class="px-4 py-3 text-gray-300">18 Jul 2024</td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Blue Mountains Assessment</td><td class="px-4 py-3 text-gray-300">Private Developer</td><td class="px-4 py-3 text-gray-300">Environmental</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-yellow-500/20 text-yellow-400">At Risk</span></td><td class="px-4 py-3 text-gray-300">30 Aug 2024</td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Woollahra Conservation</td><td class="px-4 py-3 text-gray-300">Woollahra Council</td><td class="px-4 py-3 text-gray-300">Built Heritage</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">On Track</span></td><td class="px-4 py-3 text-gray-300">8 Sep 2024</td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Newcastle Port Study</td><td class="px-4 py-3 text-gray-300">Port of Newcastle</td><td class="px-4 py-3 text-gray-300">Cultural Heritage</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">On Track</span></td><td class="px-4 py-3 text-gray-300">25 Aug 2024</td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Western Sydney Airport</td><td class="px-4 py-3 text-gray-300">WSA Co</td><td class="px-4 py-3 text-gray-300">Archaeological</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-red-500/20 text-red-400">Overdue</span></td><td class="px-4 py-3 text-gray-300">10 Jul 2024</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <script>
+    const bp = '#7C3AED';
+    new Chart(document.getElementById('chart1'), {
+      type:'bar', data:{labels:["Archaeological", "Built Heritage", "Environmental", "Cultural Heritage", "Planning Support", "Interpretation"], datasets:[{data:[18, 14, 22, 8, 12, 6],
+      backgroundColor:bp+'99', borderColor:bp, borderWidth:1, borderRadius:4}]},
+      options:{responsive:true, plugins:{legend:{display:false}},
+      scales:{x:{grid:{color:'#1f2937'},ticks:{color:'#9ca3af'}},
+      y:{grid:{color:'#1f2937'},ticks:{color:'#9ca3af'}}}}
+    });
+    new Chart(document.getElementById('chart2'), {
+      type:'line', data:{labels:["Jan", "Feb", "Mar", "Apr", "May", "Jun"], datasets:[{data:[12, 15, 18, 22, 19, 25],
+      borderColor:bp, backgroundColor:bp+'20', fill:true, tension:0.3,
+      pointRadius:4, pointBackgroundColor:bp}]},
+      options:{responsive:true, plugins:{legend:{display:false}},
+      scales:{x:{grid:{color:'#1f2937'},ticks:{color:'#9ca3af'}},
+      y:{grid:{color:'#1f2937'},ticks:{color:'#9ca3af'}}}}
+    });
+  </script>
+  <script>
+(function(){
+  var u="https://script.google.com/macros/s/AKfycbxrbCXmnUSxULE7UOiSxiYIPCVsvDGhgT1avz1gjr8aqUyQXHOBAoS8lK2cpHWH_YSD/exec";
+  var p=new URLSearchParams(window.location.search);
+  var ref=p.get("ref")||"direct";
+  var tz="";try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone}catch(e){}
+  var dev=/Mobi|Android/i.test(navigator.userAgent)?"mobile":"desktop";
+  var q="slug=arai-701d&company_name="+encodeURIComponent("Artefact Heritage and Environment")+"&demo_type=dashboard"
+    +"&ref="+ref+"&timezone="+encodeURIComponent(tz)+"&device="+dev;
+  new Image().src=u+"?"+q+"&event=pageview";
+  var start=Date.now();
+  var maxScroll=0;
+  var sent=false;
+  window.addEventListener("scroll",function(){
+    var s=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight)*100;
+    if(s>maxScroll)maxScroll=Math.round(s);
+  });
+  var leaveImg=document.createElement("img");
+  leaveImg.style.cssText="position:absolute;width:1px;height:1px;opacity:0";
+  document.body.appendChild(leaveImg);
+  function sendLeave(){
+    if(sent)return;sent=true;
+    var dur=Math.round((Date.now()-start)/1000);
+    leaveImg.src=u+"?"+q+"&event=leave&duration="+dur+"&scroll_depth="+maxScroll;
+  }
+  window.addEventListener("pagehide",sendLeave);
+  window.addEventListener("beforeunload",sendLeave);
+  document.addEventListener("visibilitychange",function(){if(document.visibilityState==="hidden")sendLeave()});
+})();
+</script>
+</body>
+</html>
