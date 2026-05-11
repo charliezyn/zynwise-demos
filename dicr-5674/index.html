@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DiJones Real Estate | Operations Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: { primary: '#338ee8', secondary: '#1E293B' } },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <style>
+    @keyframes pulse-dot { 0%,100% { opacity:1 } 50% { opacity:0.4 } }
+    .pulse-dot { animation: pulse-dot 2s ease-in-out infinite }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(12px) } to { opacity:1; transform:translateY(0) } }
+    .fade-up { animation: fadeUp 0.5s ease-out forwards; opacity:0 }
+    .fade-up:nth-child(1) { animation-delay:0.1s }
+    .fade-up:nth-child(2) { animation-delay:0.2s }
+    .fade-up:nth-child(3) { animation-delay:0.3s }
+    .fade-up:nth-child(4) { animation-delay:0.4s }
+    tbody tr:hover { background: rgba(255,255,255,0.03) }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans min-h-screen">
+  <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur border-b border-brand-primary/30 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3"><img src="https://cdn.sanity.io/images/k342bbkb/production/85bbb4bc686963240114fdadef9422a246eda627-2000x1284.png" alt="DiJones Real Estate" class="h-10 max-w-[180px] object-contain rounded-lg border border-gray-700 bg-white p-1" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="text-xl font-bold hidden" style="color:#338ee8">DiJones Real Estate</span></div>
+      <h1 class="text-lg font-semibold text-gray-300">Operations Dashboard</h1>
+      <div class="flex items-center gap-3">
+        <span class="flex items-center gap-1.5 text-xs text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-dot"></span> Live
+        </span>
+      </div>
+    </div>
+  </header>
+  <div class="max-w-7xl mx-auto px-6 pt-6">
+    <div class="rounded-lg border border-brand-primary/20 bg-brand-primary/5 px-5 py-3 text-center">
+      <p class="text-sm text-gray-400">Prepared for <span class="font-medium text-white">DiJones Real Estate</span> by Charlie, Zynwise |
+        <a href="https://zynwise.com" class="text-brand-primary hover:underline">zynwise.com</a></p>
+    </div>
+  </div>
+  <main class="max-w-7xl mx-auto px-6 py-6 space-y-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"><div class="fade-up bg-gray-900 rounded-xl p-6 border border-gray-800">
+  <p class="text-gray-400 text-sm uppercase tracking-wide">Active Listings</p>
+  <p class="text-3xl font-bold text-white mt-1">284</p>
+  <div class="flex items-center gap-1 mt-2 text-emerald-400">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+    <span class="text-sm font-medium">+12%</span>
+    <span class="text-xs text-gray-500 ml-1">vs last month</span>
+  </div>
+</div>
+<div class="fade-up bg-gray-900 rounded-xl p-6 border border-gray-800">
+  <p class="text-gray-400 text-sm uppercase tracking-wide">Email Open Rate</p>
+  <p class="text-3xl font-bold text-white mt-1">31.2%</p>
+  <div class="flex items-center gap-1 mt-2 text-red-400">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    <span class="text-sm font-medium">-2.1%</span>
+    <span class="text-xs text-gray-500 ml-1">vs last month</span>
+  </div>
+</div>
+<div class="fade-up bg-gray-900 rounded-xl p-6 border border-gray-800">
+  <p class="text-gray-400 text-sm uppercase tracking-wide">CRM Journey Completion</p>
+  <p class="text-3xl font-bold text-white mt-1">68.4%</p>
+  <div class="flex items-center gap-1 mt-2 text-emerald-400">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+    <span class="text-sm font-medium">+8.3%</span>
+    <span class="text-xs text-gray-500 ml-1">vs last month</span>
+  </div>
+</div>
+<div class="fade-up bg-gray-900 rounded-xl p-6 border border-gray-800">
+  <p class="text-gray-400 text-sm uppercase tracking-wide">Lead Conversion Rate</p>
+  <p class="text-3xl font-bold text-white mt-1">18.7%</p>
+  <div class="flex items-center gap-1 mt-2 text-emerald-400">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+    <span class="text-sm font-medium">+5.2%</span>
+    <span class="text-xs text-gray-500 ml-1">vs last month</span>
+  </div>
+</div></div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div class="bg-gray-900 rounded-xl border border-gray-800 p-6">
+        <h3 class="text-sm font-medium text-gray-400 mb-4">Marketing Automation Performance by Campaign Type</h3>
+        <canvas id="chart1" height="200"></canvas>
+      </div>
+      <div class="bg-gray-900 rounded-xl border border-gray-800 p-6">
+        <h3 class="text-sm font-medium text-gray-400 mb-4">Monthly Email Engagement Metrics</h3>
+        <canvas id="chart2" height="200"></canvas>
+      </div>
+    </div>
+    <div class="bg-gray-900 rounded-xl border border-gray-800 overflow-hidden">
+      <div class="px-6 py-4 border-b border-gray-800">
+        <h3 class="text-sm font-medium text-gray-400">Active CRM Automation Journeys</h3>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead><tr class="bg-gray-800/50"><th class="px-4 py-3 text-left text-gray-400 text-xs font-medium uppercase tracking-wider">Journey Name</th><th class="px-4 py-3 text-left text-gray-400 text-xs font-medium uppercase tracking-wider">Active Contacts</th><th class="px-4 py-3 text-left text-gray-400 text-xs font-medium uppercase tracking-wider">Completion Rate</th><th class="px-4 py-3 text-left text-gray-400 text-xs font-medium uppercase tracking-wider">Conversion</th><th class="px-4 py-3 text-left text-gray-400 text-xs font-medium uppercase tracking-wider">Status</th></tr></thead>
+          <tbody class="divide-y divide-gray-800/50"><tr><td class="px-4 py-3 text-gray-300">New Buyer Welcome Series</td><td class="px-4 py-3 text-gray-300">1,247</td><td class="px-4 py-3 text-gray-300">72.3%</td><td class="px-4 py-3 text-gray-300">19.4%</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">Active</span></td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Post-Appraisal Follow-up</td><td class="px-4 py-3 text-gray-300">892</td><td class="px-4 py-3 text-gray-300">68.1%</td><td class="px-4 py-3 text-gray-300">22.8%</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">Active</span></td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Landlord Onboarding</td><td class="px-4 py-3 text-gray-300">534</td><td class="px-4 py-3 text-gray-300">45.2%</td><td class="px-4 py-3 text-gray-300">15.1%</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-yellow-500/20 text-yellow-400">Needs Review</span></td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Settlement Congratulations</td><td class="px-4 py-3 text-gray-300">378</td><td class="px-4 py-3 text-gray-300">81.4%</td><td class="px-4 py-3 text-gray-300">8.3%</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">Active</span></td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Tenant Application Process</td><td class="px-4 py-3 text-gray-300">456</td><td class="px-4 py-3 text-gray-300">59.7%</td><td class="px-4 py-3 text-gray-300">31.2%</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">Active</span></td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Market Update Newsletter</td><td class="px-4 py-3 text-gray-300">3,421</td><td class="px-4 py-3 text-gray-300">28.9%</td><td class="px-4 py-3 text-gray-300">4.7%</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-yellow-500/20 text-yellow-400">Under Review</span></td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Vendor Check-in Sequence</td><td class="px-4 py-3 text-gray-300">223</td><td class="px-4 py-3 text-gray-300">52.4%</td><td class="px-4 py-3 text-gray-300">16.8%</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">Active</span></td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Property Management Welcome</td><td class="px-4 py-3 text-gray-300">167</td><td class="px-4 py-3 text-gray-300">34.1%</td><td class="px-4 py-3 text-gray-300">12.6%</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-red-500/20 text-red-400">Paused</span></td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Win-back Campaign</td><td class="px-4 py-3 text-gray-300">789</td><td class="px-4 py-3 text-gray-300">41.3%</td><td class="px-4 py-3 text-gray-300">9.2%</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-yellow-500/20 text-yellow-400">Testing</span></td></tr>
+<tr><td class="px-4 py-3 text-gray-300">SMS Inspection Reminders</td><td class="px-4 py-3 text-gray-300">2,156</td><td class="px-4 py-3 text-gray-300">89.7%</td><td class="px-4 py-3 text-gray-300">43.1%</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">Active</span></td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <script>
+    const bp = '#338ee8';
+    new Chart(document.getElementById('chart1'), {
+      type:'bar', data:{labels:["Buyer Journey", "Seller Journey", "Landlord Journey", "Tenant Journey", "Post-Settlement", "Appraisal Follow-up"], datasets:[{data:[342, 298, 156, 189, 87, 124],
+      backgroundColor:bp+'99', borderColor:bp, borderWidth:1, borderRadius:4}]},
+      options:{responsive:true, plugins:{legend:{display:false}},
+      scales:{x:{grid:{color:'#1f2937'},ticks:{color:'#9ca3af'}},
+      y:{grid:{color:'#1f2937'},ticks:{color:'#9ca3af'}}}}
+    });
+    new Chart(document.getElementById('chart2'), {
+      type:'line', data:{labels:["Jan", "Feb", "Mar", "Apr", "May", "Jun"], datasets:[{data:[28.4, 29.1, 26.8, 30.2, 32.1, 31.2],
+      borderColor:bp, backgroundColor:bp+'20', fill:true, tension:0.3,
+      pointRadius:4, pointBackgroundColor:bp}]},
+      options:{responsive:true, plugins:{legend:{display:false}},
+      scales:{x:{grid:{color:'#1f2937'},ticks:{color:'#9ca3af'}},
+      y:{grid:{color:'#1f2937'},ticks:{color:'#9ca3af'}}}}
+    });
+  </script>
+  <script>
+(function(){
+  var u="https://script.google.com/macros/s/AKfycbxrbCXmnUSxULE7UOiSxiYIPCVsvDGhgT1avz1gjr8aqUyQXHOBAoS8lK2cpHWH_YSD/exec";
+  var p=new URLSearchParams(window.location.search);
+  var ref=p.get("ref")||"direct";
+  var tz="";try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone}catch(e){}
+  var dev=/Mobi|Android/i.test(navigator.userAgent)?"mobile":"desktop";
+  var q="slug=dicr-5674&company_name="+encodeURIComponent("DiJones Real Estate")+"&demo_type=dashboard"
+    +"&ref="+ref+"&timezone="+encodeURIComponent(tz)+"&device="+dev;
+  new Image().src=u+"?"+q+"&event=pageview";
+  var start=Date.now();
+  var maxScroll=0;
+  var sent=false;
+  window.addEventListener("scroll",function(){
+    var s=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight)*100;
+    if(s>maxScroll)maxScroll=Math.round(s);
+  });
+  var leaveTimer=null;
+  function sendLeave(){
+    if(sent)return;sent=true;
+    var dur=Math.round((Date.now()-start)/1000);
+    var leaveUrl=u+"?"+q+"&event=leave&duration="+dur+"&scroll_depth="+maxScroll;
+    fetch(leaveUrl,{method:"GET",keepalive:true}).catch(function(){});
+  }
+  document.addEventListener("visibilitychange",function(){
+    if(document.visibilityState==="hidden"){
+      leaveTimer=setTimeout(sendLeave,30000);
+    }else{
+      if(leaveTimer){clearTimeout(leaveTimer);leaveTimer=null}
+    }
+  });
+  window.addEventListener("pagehide",function(){if(leaveTimer)clearTimeout(leaveTimer);sendLeave()});
+})();
+</script>
+</body>
+</html>

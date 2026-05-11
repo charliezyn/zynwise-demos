@@ -327,6 +327,150 @@
       "path": "arai-d38c",
       "created_date": "2026-05-11",
       "expiry_date": "2026-06-10"
+    },
+    {
+      "company": "WS Remedial Group",
+      "slug": "wsai-68cf",
+      "demo_type": "ai_agent",
+      "path": "wsai-68cf",
+      "created_date": "2026-05-11",
+      "expiry_date": "2026-06-10"
+    },
+    {
+      "company": "The Unmarked Group",
+      "slug": "thhe-eae7",
+      "demo_type": "ai_agent",
+      "path": "thhe-eae7",
+      "created_date": "2026-05-11",
+      "expiry_date": "2026-06-10"
+    },
+    {
+      "company": "Hicaliber",
+      "slug": "hicr-32d5",
+      "demo_type": "workflow",
+      "path": "hicr-32d5",
+      "created_date": "2026-05-11",
+      "expiry_date": "2026-06-10"
+    },
+    {
+      "company": "Martin Brothers",
+      "slug": "maau-098e",
+      "demo_type": "workflow",
+      "path": "maau-098e",
+      "created_date": "2026-05-11",
+      "expiry_date": "2026-06-10"
+    },
+    {
+      "company": "Grove Group",
+      "slug": "grai-51fc",
+      "demo_type": "ai_agent",
+      "path": "grai-51fc",
+      "created_date": "2026-05-11",
+      "expiry_date": "2026-06-10"
+    },
+    {
+      "company": "Ryman Healthcare",
+      "slug": "ryai-6eea",
+      "demo_type": "ai_agent",
+      "path": "ryai-6eea",
+      "created_date": "2026-05-11",
+      "expiry_date": "2026-06-10"
+    },
+    {
+      "company": "Artefact Heritage and Environment",
+      "slug": "arai-ca6d",
+      "demo_type": "dashboard",
+      "path": "arai-ca6d",
+      "created_date": "2026-05-11",
+      "expiry_date": "2026-06-10"
+    },
+    {
+      "company": "C9",
+      "slug": "cse-c68f",
+      "demo_type": "workflow",
+      "path": "cse-c68f",
+      "created_date": "2026-05-11",
+      "expiry_date": "2026-06-10"
+    },
+    {
+      "company": "HRG",
+      "slug": "hrai-7e92",
+      "demo_type": "workflow",
+      "path": "hrai-7e92",
+      "created_date": "2026-05-11",
+      "expiry_date": "2026-06-10"
+    },
+    {
+      "company": "RSEA",
+      "slug": "rsai-fba3",
+      "demo_type": "workflow",
+      "path": "rsai-fba3",
+      "created_date": "2026-05-11",
+      "expiry_date": "2026-06-10"
+    },
+    {
+      "company": "Kogan.com",
+      "slug": "koai-e0de",
+      "demo_type": "ai_agent",
+      "path": "koai-e0de",
+      "created_date": "2026-05-11",
+      "expiry_date": "2026-06-10"
+    },
+    {
+      "company": "Dyson",
+      "slug": "dyec-bfec",
+      "demo_type": "dashboard",
+      "path": "dyec-bfec",
+      "created_date": "2026-05-11",
+      "expiry_date": "2026-06-10"
+    },
+    {
+      "company": "Ellby Solutions Pty Ltd",
+      "slug": "elgr-dc7e",
+      "demo_type": "workflow",
+      "path": "elgr-dc7e",
+      "created_date": "2026-05-11",
+      "expiry_date": "2026-06-10"
+    },
+    {
+      "company": "Boyce Chartered Accountants",
+      "slug": "boai-c93f",
+      "demo_type": "ai_agent",
+      "path": "boai-c93f",
+      "created_date": "2026-05-11",
+      "expiry_date": "2026-06-10"
+    },
+    {
+      "company": "RACT",
+      "slug": "rabu-31cc",
+      "demo_type": "workflow",
+      "path": "rabu-31cc",
+      "created_date": "2026-05-11",
+      "expiry_date": "2026-06-10"
+    },
+    {
+      "company": "DiJones Real Estate",
+      "slug": "dicr-5674",
+      "demo_type": "dashboard",
+      "path": "dicr-5674",
+      "created_date": "2026-05-11",
+      "expiry_date": "2026-06-10"
+    },
+    {
+      "company": "Enkisonics Pty Ltd",
+      "slug": "enai-94f4",
+      "demo_type": "dashboard",
+      "path": "enai-94f4",
+      "created_date": "2026-05-11",
+      "expiry_date": "2026-06-10"
+    },
+    {
+      "company": "Plenti",
+      "slug": "plbu-04e9",
+      "demo_type": "workflow",
+      "path": "plbu-04e9",
+      "created_date": "2026-05-11",
+      "expiry_date": "2026-06-10"
     }
   ]
 }

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSEA | Automation Opportunity</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { brand: { primary: '#7C3AED', secondary: '#1E293B' } },
+        fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+      }}
+    }
+  </script>
+  <style>
+    @keyframes fadeUp { from { opacity:0; transform:translateY(16px) } to { opacity:1; transform:translateY(0) } }
+    .step-fade { opacity:0; animation: fadeUp 0.4s ease-out forwards }
+    @keyframes countUp { from { opacity:0; transform:scale(0.8) } to { opacity:1; transform:scale(1) } }
+    .stat-pop { animation: countUp 0.5s ease-out forwards; opacity:0 }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans min-h-screen">
+  <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur border-b border-brand-primary/30 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3"><img src="https://rsea.com.au/Themes/BPDTHEME01/theme-client-updates/apple-touch-icon.png?v=2023-06-29-B363" alt="RSEA" class="h-10 max-w-[180px] object-contain rounded-lg border border-gray-700 bg-white p-1" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="text-xl font-bold hidden" style="color:#7C3AED">RSEA</span></div>
+      <h1 class="text-lg font-semibold text-gray-300">Automation Opportunity</h1>
+    </div>
+  </header>
+  <div class="max-w-7xl mx-auto px-6 pt-6">
+    <div class="rounded-lg border border-brand-primary/20 bg-brand-primary/5 px-5 py-3 text-center">
+      <p class="text-sm text-gray-400">Prepared for <span class="font-medium text-white">RSEA</span> by Charlie, Zynwise |
+        <a href="https://zynwise.com" class="text-brand-primary hover:underline">zynwise.com</a></p>
+    </div>
+  </div>
+  <main class="max-w-7xl mx-auto px-6 py-6">
+    <div class="text-center mb-10">
+      <h2 class="text-2xl font-bold text-white mb-2">How RSEA Safety Can Save 32 Hours Per Week</h2>
+      <p class="text-gray-400">Based on $81/hr average operational cost for retail operations staff</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+      <div>
+        <h3 class="text-sm font-semibold text-red-400 uppercase tracking-wider mb-6 text-center">Current Process</h3>
+        <div class="space-y-4"><div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.1s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Customer Service Inquiry Processing</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">12 min per inquiry</span>
+  </div>
+  <p class="text-xs text-gray-400">Staff manually log customer inquiries across 100 stores, create tickets, and route to appropriate departments</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Customer service staff</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.25s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">B2B Quote Generation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">45 min per quote</span>
+  </div>
+  <p class="text-xs text-gray-400">Business analysts manually compile safety equipment quotes from ERP, check stock levels across stores, calculate pricing</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Business analysts</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.4s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Hire Equipment Scheduling</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">20 min per booking</span>
+  </div>
+  <p class="text-xs text-gray-400">Operations staff manually check equipment availability, coordinate delivery schedules, update booking systems</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Operations staff</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.5499999999999999s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Trade Account Setup</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">35 min per application</span>
+  </div>
+  <p class="text-xs text-gray-400">Finance team manually processes 30-day trade account applications, verifies documents, sets up customer records</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Finance staff</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.7s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Stock Level Reporting</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">90 min per store per week</span>
+  </div>
+  <p class="text-xs text-gray-400">Store managers compile weekly stock reports from ERP, identify low stock items, create reorder requests</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Store managers</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.85s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Safety Compliance Documentation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">25 min per compliance check</span>
+  </div>
+  <p class="text-xs text-gray-400">Business analysts manually track customer compliance requirements, match products to standards, prepare certification documents</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Business analysts</p>
+</div></div>
+      </div>
+      <div>
+        <h3 class="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-6 text-center">Automated Process</h3>
+        <div class="space-y-4"><div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.1s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Customer Service Inquiry Processing</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">2 min</span>
+  </div>
+  <p class="text-xs text-gray-400">AI chatbot captures inquiry details, auto-categorises issues, creates ERP tickets and routes to correct team</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Power Automate + AI Builder</span>
+    <span class="text-xs text-emerald-500">Saves 8 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.25s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">B2B Quote Generation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">5 min</span>
+  </div>
+  <p class="text-xs text-gray-400">System auto-pulls product data, checks real-time inventory, applies pricing rules and generates formatted quotes</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Power Automate + ERP integration</span>
+    <span class="text-xs text-emerald-500">Saves 6 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.4s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Hire Equipment Scheduling</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">3 min</span>
+  </div>
+  <p class="text-xs text-gray-400">Automated availability checking, calendar integration, customer notifications and delivery scheduling</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Power Apps + Azure Logic Apps</span>
+    <span class="text-xs text-emerald-500">Saves 5 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.5499999999999999s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Trade Account Setup</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">8 min</span>
+  </div>
+  <p class="text-xs text-gray-400">AI document processing extracts key data, automated credit checks, auto-creates customer accounts in ERP</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Power Automate + AI Document Intelligence</span>
+    <span class="text-xs text-emerald-500">Saves 4 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.7s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Stock Level Reporting</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">15 min</span>
+  </div>
+  <p class="text-xs text-gray-400">Automated ERP data extraction, AI-powered demand forecasting, auto-generated reorder suggestions</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Power BI + Azure Machine Learning</span>
+    <span class="text-xs text-emerald-500">Saves 5 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.85s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Safety Compliance Documentation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">5 min</span>
+  </div>
+  <p class="text-xs text-gray-400">AI matches products to safety standards database, auto-generates compliance certificates and documentation</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Microsoft Copilot + SharePoint</span>
+    <span class="text-xs text-emerald-500">Saves 4 hrs/week</span>
+  </div>
+</div></div>
+      </div>
+    </div>
+    <div class="bg-gray-900 rounded-xl border border-brand-primary/30 p-8">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        <div class="stat-pop" style="animation-delay:0.8s">
+          <p class="text-gray-400 text-sm mb-1">Hours Saved Per Week</p>
+          <p class="text-3xl font-bold text-brand-primary">32</p>
+        </div>
+        <div class="stat-pop" style="animation-delay:1.0s">
+          <p class="text-gray-400 text-sm mb-1">Annual Value</p>
+          <p class="text-3xl font-bold text-emerald-400">$124,800</p>
+        </div>
+        <div class="stat-pop" style="animation-delay:1.2s">
+          <p class="text-gray-400 text-sm mb-1">Processes Automated</p>
+          <p class="text-3xl font-bold text-white">6</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="mt-12 py-6"></footer>
+  <script>
+(function(){
+  var u="https://script.google.com/macros/s/AKfycbxrbCXmnUSxULE7UOiSxiYIPCVsvDGhgT1avz1gjr8aqUyQXHOBAoS8lK2cpHWH_YSD/exec";
+  var p=new URLSearchParams(window.location.search);
+  var ref=p.get("ref")||"direct";
+  var tz="";try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone}catch(e){}
+  var dev=/Mobi|Android/i.test(navigator.userAgent)?"mobile":"desktop";
+  var q="slug=rsai-fba3&company_name="+encodeURIComponent("RSEA")+"&demo_type=workflow"
+    +"&ref="+ref+"&timezone="+encodeURIComponent(tz)+"&device="+dev;
+  new Image().src=u+"?"+q+"&event=pageview";
+  var start=Date.now();
+  var maxScroll=0;
+  var sent=false;
+  window.addEventListener("scroll",function(){
+    var s=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight)*100;
+    if(s>maxScroll)maxScroll=Math.round(s);
+  });
+  var leaveTimer=null;
+  function sendLeave(){
+    if(sent)return;sent=true;
+    var dur=Math.round((Date.now()-start)/1000);
+    var leaveUrl=u+"?"+q+"&event=leave&duration="+dur+"&scroll_depth="+maxScroll;
+    fetch(leaveUrl,{method:"GET",keepalive:true}).catch(function(){});
+  }
+  document.addEventListener("visibilitychange",function(){
+    if(document.visibilityState==="hidden"){
+      leaveTimer=setTimeout(sendLeave,30000);
+    }else{
+      if(leaveTimer){clearTimeout(leaveTimer);leaveTimer=null}
+    }
+  });
+  window.addEventListener("pagehide",function(){if(leaveTimer)clearTimeout(leaveTimer);sendLeave()});
+})();
+</script>
+</body>
+</html>
