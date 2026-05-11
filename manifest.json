@@ -303,6 +303,14 @@
       "path": "enai-6e18",
       "created_date": "2026-05-10",
       "expiry_date": "2026-06-09"
+    },
+    {
+      "company": "Artefact Heritage and Environment",
+      "slug": "arai-75e4",
+      "demo_type": "dashboard",
+      "path": "arai-75e4",
+      "created_date": "2026-05-11",
+      "expiry_date": "2026-06-10"
     }
   ]
 }
