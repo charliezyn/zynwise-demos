@@ -543,6 +543,78 @@
       "path": "plbu-c93e",
       "created_date": "2026-05-27",
       "expiry_date": "2026-06-26"
+    },
+    {
+      "company": "Artefact Heritage and Environment",
+      "slug": "arai-8bbb",
+      "demo_type": "dashboard",
+      "path": "arai-8bbb",
+      "created_date": "2026-05-27",
+      "expiry_date": "2026-06-26"
+    },
+    {
+      "company": "Ryman Healthcare",
+      "slug": "ryai-2dbc",
+      "demo_type": "ai_agent",
+      "path": "ryai-2dbc",
+      "created_date": "2026-05-27",
+      "expiry_date": "2026-06-26"
+    },
+    {
+      "company": "Martin Brothers",
+      "slug": "maau-e4ff",
+      "demo_type": "workflow",
+      "path": "maau-e4ff",
+      "created_date": "2026-05-27",
+      "expiry_date": "2026-06-26"
+    },
+    {
+      "company": "Grove Group",
+      "slug": "grai-cbb1",
+      "demo_type": "ai_agent",
+      "path": "grai-cbb1",
+      "created_date": "2026-05-27",
+      "expiry_date": "2026-06-26"
+    },
+    {
+      "company": "HRG",
+      "slug": "hrai-977e",
+      "demo_type": "workflow",
+      "path": "hrai-977e",
+      "created_date": "2026-05-27",
+      "expiry_date": "2026-06-26"
+    },
+    {
+      "company": "Ellby Solutions Pty Ltd",
+      "slug": "elgr-7185",
+      "demo_type": "workflow",
+      "path": "elgr-7185",
+      "created_date": "2026-05-27",
+      "expiry_date": "2026-06-26"
+    },
+    {
+      "company": "Boyce Chartered Accountants",
+      "slug": "boai-67bb",
+      "demo_type": "ai_agent",
+      "path": "boai-67bb",
+      "created_date": "2026-05-27",
+      "expiry_date": "2026-06-26"
+    },
+    {
+      "company": "Plenti",
+      "slug": "plbu-5ffa",
+      "demo_type": "workflow",
+      "path": "plbu-5ffa",
+      "created_date": "2026-05-27",
+      "expiry_date": "2026-06-26"
+    },
+    {
+      "company": "Enkisonics Pty Ltd",
+      "slug": "enai-dd0c",
+      "demo_type": "dashboard",
+      "path": "enai-dd0c",
+      "created_date": "2026-05-27",
+      "expiry_date": "2026-06-26"
     }
   ]
 }

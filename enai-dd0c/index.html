@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enkisonics Pty Ltd | Operations Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: { primary: '#7C3AED', secondary: '#1E293B' } },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <style>
+    @keyframes pulse-dot { 0%,100% { opacity:1 } 50% { opacity:0.4 } }
+    .pulse-dot { animation: pulse-dot 2s ease-in-out infinite }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(12px) } to { opacity:1; transform:translateY(0) } }
+    .fade-up { animation: fadeUp 0.5s ease-out forwards; opacity:0 }
+    .fade-up:nth-child(1) { animation-delay:0.1s }
+    .fade-up:nth-child(2) { animation-delay:0.2s }
+    .fade-up:nth-child(3) { animation-delay:0.3s }
+    .fade-up:nth-child(4) { animation-delay:0.4s }
+    tbody tr:hover { background: rgba(255,255,255,0.03) }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans min-h-screen">
+  <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur border-b border-brand-primary/30 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3"><img src="https://enkisonics.com/images/og-jarvis-ai.jpg" alt="Enkisonics Pty Ltd" class="h-10 max-w-[180px] object-contain rounded-lg border border-gray-700 bg-white p-1" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="text-xl font-bold hidden" style="color:#7C3AED">Enkisonics Pty Ltd</span></div>
+      <h1 class="text-lg font-semibold text-gray-300">Operations Dashboard</h1>
+      <div class="flex items-center gap-3">
+        <span class="flex items-center gap-1.5 text-xs text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-dot"></span> Live
+        </span>
+      </div>
+    </div>
+  </header>
+  <div class="max-w-7xl mx-auto px-6 pt-6">
+    <div class="rounded-lg border border-brand-primary/20 bg-brand-primary/5 px-5 py-3 text-center">
+      <p class="text-sm text-gray-400">Prepared for <span class="font-medium text-white">Enkisonics Pty Ltd</span> by Charlie, Zynwise |
+        <a href="https://zynwise.com" class="text-brand-primary hover:underline">zynwise.com</a></p>
+    </div>
+  </div>
+  <main class="max-w-7xl mx-auto px-6 py-6 space-y-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"><div class="fade-up bg-gray-900 rounded-xl p-6 border border-gray-800">
+  <p class="text-gray-400 text-sm uppercase tracking-wide">AI Projects Shipped</p>
+  <p class="text-3xl font-bold text-white mt-1">47</p>
+  <div class="flex items-center gap-1 mt-2 text-emerald-400">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+    <span class="text-sm font-medium">+23%</span>
+    <span class="text-xs text-gray-500 ml-1">vs last month</span>
+  </div>
+</div>
+<div class="fade-up bg-gray-900 rounded-xl p-6 border border-gray-800">
+  <p class="text-gray-400 text-sm uppercase tracking-wide">GPU Cluster Utilization</p>
+  <p class="text-3xl font-bold text-white mt-1">87%</p>
+  <div class="flex items-center gap-1 mt-2 text-red-400">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    <span class="text-sm font-medium">-2%</span>
+    <span class="text-xs text-gray-500 ml-1">vs last month</span>
+  </div>
+</div>
+<div class="fade-up bg-gray-900 rounded-xl p-6 border border-gray-800">
+  <p class="text-gray-400 text-sm uppercase tracking-wide">Active Client Engagements</p>
+  <p class="text-3xl font-bold text-white mt-1">31</p>
+  <div class="flex items-center gap-1 mt-2 text-emerald-400">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+    <span class="text-sm font-medium">+19%</span>
+    <span class="text-xs text-gray-500 ml-1">vs last month</span>
+  </div>
+</div>
+<div class="fade-up bg-gray-900 rounded-xl p-6 border border-gray-800">
+  <p class="text-gray-400 text-sm uppercase tracking-wide">Avg Build Time (Days)</p>
+  <p class="text-3xl font-bold text-white mt-1">8.2</p>
+  <div class="flex items-center gap-1 mt-2 text-emerald-400">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+    <span class="text-sm font-medium">+15%</span>
+    <span class="text-xs text-gray-500 ml-1">vs last month</span>
+  </div>
+</div></div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div class="bg-gray-900 rounded-xl border border-gray-800 p-6">
+        <h3 class="text-sm font-medium text-gray-400 mb-4">Projects Delivered by Service Type</h3>
+        <canvas id="chart1" height="200"></canvas>
+      </div>
+      <div class="bg-gray-900 rounded-xl border border-gray-800 p-6">
+        <h3 class="text-sm font-medium text-gray-400 mb-4">Monthly AI Agent Deployments</h3>
+        <canvas id="chart2" height="200"></canvas>
+      </div>
+    </div>
+    <div class="bg-gray-900 rounded-xl border border-gray-800 overflow-hidden">
+      <div class="px-6 py-4 border-b border-gray-800">
+        <h3 class="text-sm font-medium text-gray-400">Current Client Projects</h3>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead><tr class="bg-gray-800/50"><th class="px-4 py-3 text-left text-gray-400 text-xs font-medium uppercase tracking-wider">Client</th><th class="px-4 py-3 text-left text-gray-400 text-xs font-medium uppercase tracking-wider">Project Type</th><th class="px-4 py-3 text-left text-gray-400 text-xs font-medium uppercase tracking-wider">Status</th><th class="px-4 py-3 text-left text-gray-400 text-xs font-medium uppercase tracking-wider">Days Active</th><th class="px-4 py-3 text-left text-gray-400 text-xs font-medium uppercase tracking-wider">Completion %</th></tr></thead>
+          <tbody class="divide-y divide-gray-800/50"><tr><td class="px-4 py-3 text-gray-300">Cairns Physio Centre</td><td class="px-4 py-3 text-gray-300">Booking System</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">On Track</span></td><td class="px-4 py-3 text-gray-300">12</td><td class="px-4 py-3 text-gray-300">85%</td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Brisbane Accounting Co</td><td class="px-4 py-3 text-gray-300">CRM Build</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-yellow-500/20 text-yellow-400">At Risk</span></td><td class="px-4 py-3 text-gray-300">28</td><td class="px-4 py-3 text-gray-300">60%</td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Gold Coast Dental</td><td class="px-4 py-3 text-gray-300">AI Automation</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">Complete</span></td><td class="px-4 py-3 text-gray-300">15</td><td class="px-4 py-3 text-gray-300">100%</td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Townsville Law Firm</td><td class="px-4 py-3 text-gray-300">Client Portal</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">On Track</span></td><td class="px-4 py-3 text-gray-300">8</td><td class="px-4 py-3 text-gray-300">75%</td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Darwin Engineering</td><td class="px-4 py-3 text-gray-300">Workflow System</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-red-500/20 text-red-400">Blocked</span></td><td class="px-4 py-3 text-gray-300">35</td><td class="px-4 py-3 text-gray-300">45%</td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Perth Real Estate</td><td class="px-4 py-3 text-gray-300">Lead Pipeline</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">On Track</span></td><td class="px-4 py-3 text-gray-300">5</td><td class="px-4 py-3 text-gray-300">90%</td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Melbourne Clinic</td><td class="px-4 py-3 text-gray-300">Invoice Dashboard</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-yellow-500/20 text-yellow-400">Pending</span></td><td class="px-4 py-3 text-gray-300">22</td><td class="px-4 py-3 text-gray-300">55%</td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Sydney Logistics</td><td class="px-4 py-3 text-gray-300">AI Integration</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">On Track</span></td><td class="px-4 py-3 text-gray-300">18</td><td class="px-4 py-3 text-gray-300">80%</td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Adelaide Construction</td><td class="px-4 py-3 text-gray-300">Project Management</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-yellow-500/20 text-yellow-400">At Risk</span></td><td class="px-4 py-3 text-gray-300">31</td><td class="px-4 py-3 text-gray-300">65%</td></tr>
+<tr><td class="px-4 py-3 text-gray-300">Hobart Marine Services</td><td class="px-4 py-3 text-gray-300">Booking &amp; CRM</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400">On Track</span></td><td class="px-4 py-3 text-gray-300">7</td><td class="px-4 py-3 text-gray-300">95%</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <script>
+    const bp = '#7C3AED';
+    new Chart(document.getElementById('chart1'), {
+      type:'bar', data:{labels:["Custom CRM", "Booking Systems", "AI Automation", "Client Portals", "Workflow Integration", "Website Builds"], datasets:[{data:[12, 8, 15, 6, 9, 11],
+      backgroundColor:bp+'99', borderColor:bp, borderWidth:1, borderRadius:4}]},
+      options:{responsive:true, plugins:{legend:{display:false}},
+      scales:{x:{grid:{color:'#1f2937'},ticks:{color:'#9ca3af'}},
+      y:{grid:{color:'#1f2937'},ticks:{color:'#9ca3af'}}}}
+    });
+    new Chart(document.getElementById('chart2'), {
+      type:'line', data:{labels:["Jan", "Feb", "Mar", "Apr", "May", "Jun"], datasets:[{data:[18, 22, 28, 35, 41, 47],
+      borderColor:bp, backgroundColor:bp+'20', fill:true, tension:0.3,
+      pointRadius:4, pointBackgroundColor:bp}]},
+      options:{responsive:true, plugins:{legend:{display:false}},
+      scales:{x:{grid:{color:'#1f2937'},ticks:{color:'#9ca3af'}},
+      y:{grid:{color:'#1f2937'},ticks:{color:'#9ca3af'}}}}
+    });
+  </script>
+  <script>
+(function(){
+  var u="https://script.google.com/macros/s/AKfycbxn3cozbhEIy1bRdKxOzGt3XcgQ48RtyoDNAXC6oKSDHwy8ojRxyZxkw-nDi5uvxbxK/exec";
+  var p=new URLSearchParams(window.location.search);
+  var ref=p.get("ref")||"direct";
+  var tz="";try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone}catch(e){}
+  var dev=/Mobi|Android/i.test(navigator.userAgent)?"mobile":"desktop";
+  var q="slug=enai-dd0c&company_name="+encodeURIComponent("Enkisonics Pty Ltd")+"&demo_type=dashboard"
+    +"&ref="+ref+"&timezone="+encodeURIComponent(tz)+"&device="+dev;
+  new Image().src=u+"?"+q+"&event=pageview";
+  var start=Date.now();
+  var maxScroll=0;
+  var sent=false;
+  window.addEventListener("scroll",function(){
+    var s=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight)*100;
+    if(s>maxScroll)maxScroll=Math.round(s);
+  });
+  var leaveTimer=null;
+  function sendLeave(){
+    if(sent)return;sent=true;
+    var dur=Math.round((Date.now()-start)/1000);
+    var body=JSON.stringify({slug:"enai-dd0c",company_name:"Enkisonics Pty Ltd",demo_type:"dashboard",ref:ref,timezone:tz,device:dev,event:"leave",duration:dur,scroll_depth:maxScroll});
+    var blob=new Blob([body],{type:"application/json"});
+    if(navigator.sendBeacon&&navigator.sendBeacon(u,blob))return;
+    new Image().src=u+"?"+q+"&event=leave&duration="+dur+"&scroll_depth="+maxScroll;
+  }
+  document.addEventListener("visibilitychange",function(){
+    if(document.visibilityState==="hidden"){
+      leaveTimer=setTimeout(sendLeave,30000);
+    }else{
+      if(leaveTimer){clearTimeout(leaveTimer);leaveTimer=null}
+    }
+  });
+  window.addEventListener("pagehide",function(){if(leaveTimer)clearTimeout(leaveTimer);sendLeave()});
+})();
+</script>
+</body>
+</html>
