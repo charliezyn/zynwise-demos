@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Martin Brothers | Automation Opportunity</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { brand: { primary: '#7C3AED', secondary: '#1E293B' } },
+        fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+      }}
+    }
+  </script>
+  <style>
+    @keyframes fadeUp { from { opacity:0; transform:translateY(16px) } to { opacity:1; transform:translateY(0) } }
+    .step-fade { opacity:0; animation: fadeUp 0.4s ease-out forwards }
+    @keyframes countUp { from { opacity:0; transform:scale(0.8) } to { opacity:1; transform:scale(1) } }
+    .stat-pop { animation: countUp 0.5s ease-out forwards; opacity:0 }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans min-h-screen">
+  <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur border-b border-brand-primary/30 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3"><img src="https://static.wixstatic.com/media/09c3c4_d295be7a9419489e94e4d59a2af7889d~mv2.jpeg/v1/fill/w_400,h_400,al_c/09c3c4_d295be7a9419489e94e4d59a2af7889d~mv2.jpeg" alt="Martin Brothers" class="h-10 max-w-[180px] object-contain rounded-lg border border-gray-700 bg-white p-1" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="text-xl font-bold hidden" style="color:#7C3AED">Martin Brothers</span></div>
+      <h1 class="text-lg font-semibold text-gray-300">Automation Opportunity</h1>
+    </div>
+  </header>
+  <div class="max-w-7xl mx-auto px-6 pt-6">
+    <div class="rounded-lg border border-brand-primary/20 bg-brand-primary/5 px-5 py-3 text-center">
+      <p class="text-sm text-gray-400">Prepared for <span class="font-medium text-white">Martin Brothers</span> by Charlie, Zynwise |
+        <a href="https://zynwise.com" class="text-brand-primary hover:underline">zynwise.com</a></p>
+    </div>
+  </div>
+  <main class="max-w-7xl mx-auto px-6 py-6">
+    <div class="text-center mb-10">
+      <h2 class="text-2xl font-bold text-white mb-2">How Martin Brothers Can Save 34.5 Hours Per Week</h2>
+      <p class="text-gray-400">Based on $75/hr average operational cost for Australian construction/landscaping operations</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+      <div>
+        <h3 class="text-sm font-semibold text-red-400 uppercase tracking-wider mb-6 text-center">Current Process</h3>
+        <div class="space-y-4"><div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.1s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Lead Capture &amp; Qualification</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">20 min per lead</span>
+  </div>
+  <p class="text-xs text-gray-400">Manual entry of leads from website forms, phone calls, and emails into spreadsheets</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Admin staff</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.25s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Quote Preparation &amp; Follow-up</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">45 min per quote</span>
+  </div>
+  <p class="text-xs text-gray-400">Manual creation of quotes in Word, email follow-ups tracked manually</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Project managers</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.4s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Site Reporting &amp; Documentation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">30 min per site visit</span>
+  </div>
+  <p class="text-xs text-gray-400">Manual photo collection, progress reports typed up, stakeholder updates sent individually</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Site supervisors</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.5499999999999999s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Procurement &amp; Supplier Orders</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">25 min per order</span>
+  </div>
+  <p class="text-xs text-gray-400">Manual checking of inventory, creating purchase orders, chasing supplier confirmations</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Project coordinators</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.7s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Invoice Processing &amp; Financial Reporting</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">40 min per invoice + 2 hrs monthly reporting</span>
+  </div>
+  <p class="text-xs text-gray-400">Manual data entry from supplier invoices, reconciliation in spreadsheets, monthly reports compiled manually</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Finance assistant</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.85s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Job Scheduling &amp; Resource Allocation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">1 hr daily scheduling</span>
+  </div>
+  <p class="text-xs text-gray-400">Manual coordination of crew schedules, equipment allocation tracked in spreadsheets</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Operations manager</p>
+</div></div>
+      </div>
+      <div>
+        <h3 class="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-6 text-center">Automated Process</h3>
+        <div class="space-y-4"><div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.1s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Lead Capture &amp; Qualification</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">2 min</span>
+  </div>
+  <p class="text-xs text-gray-400">Web forms auto-create leads in CRM, emails parsed for contact details, qualification workflow triggered</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Zapier + HubSpot</span>
+    <span class="text-xs text-emerald-500">Saves 6 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.25s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Quote Preparation &amp; Follow-up</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">15 min</span>
+  </div>
+  <p class="text-xs text-gray-400">Quote template auto-populated from CRM data, follow-up sequence automated based on response</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Google Apps Script + Gmail automation</span>
+    <span class="text-xs text-emerald-500">Saves 7.5 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.4s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Site Reporting &amp; Documentation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">10 min</span>
+  </div>
+  <p class="text-xs text-gray-400">Mobile app captures photos with GPS, auto-generates progress reports, sends updates to all stakeholders</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Make + Google Drive + AI document generation</span>
+    <span class="text-xs text-emerald-500">Saves 8 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.5499999999999999s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Procurement &amp; Supplier Orders</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">5 min</span>
+  </div>
+  <p class="text-xs text-gray-400">Inventory levels auto-monitored, purchase orders generated when stock low, supplier confirmations tracked</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Zapier + supplier APIs</span>
+    <span class="text-xs text-emerald-500">Saves 5 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.7s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Invoice Processing &amp; Financial Reporting</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">5 min per invoice</span>
+  </div>
+  <p class="text-xs text-gray-400">AI extracts data from invoice PDFs, auto-matches to purchase orders, financial dashboards update in real-time</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Claude API + Xero integration</span>
+    <span class="text-xs text-emerald-500">Saves 4 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.85s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Job Scheduling &amp; Resource Allocation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">20 min</span>
+  </div>
+  <p class="text-xs text-gray-400">Crew availability synced with project timelines, equipment booking automated, schedule conflicts flagged</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Monday.com + Google Calendar sync</span>
+    <span class="text-xs text-emerald-500">Saves 4 hrs/week</span>
+  </div>
+</div></div>
+      </div>
+    </div>
+    <div class="bg-gray-900 rounded-xl border border-brand-primary/30 p-8">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        <div class="stat-pop" style="animation-delay:0.8s">
+          <p class="text-gray-400 text-sm mb-1">Hours Saved Per Week</p>
+          <p class="text-3xl font-bold text-brand-primary">34.5</p>
+        </div>
+        <div class="stat-pop" style="animation-delay:1.0s">
+          <p class="text-gray-400 text-sm mb-1">Annual Value</p>
+          <p class="text-3xl font-bold text-emerald-400">$124,560</p>
+        </div>
+        <div class="stat-pop" style="animation-delay:1.2s">
+          <p class="text-gray-400 text-sm mb-1">Processes Automated</p>
+          <p class="text-3xl font-bold text-white">6</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="mt-12 py-6"></footer>
+  <script>
+(function(){
+  var u="https://script.google.com/macros/s/AKfycbxn3cozbhEIy1bRdKxOzGt3XcgQ48RtyoDNAXC6oKSDHwy8ojRxyZxkw-nDi5uvxbxK/exec";
+  var p=new URLSearchParams(window.location.search);
+  var ref=p.get("ref")||"direct";
+  var tz="";try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone}catch(e){}
+  var dev=/Mobi|Android/i.test(navigator.userAgent)?"mobile":"desktop";
+  var q="slug=maau-fc8f&company_name="+encodeURIComponent("Martin Brothers")+"&demo_type=workflow"
+    +"&ref="+ref+"&timezone="+encodeURIComponent(tz)+"&device="+dev;
+  new Image().src=u+"?"+q+"&event=pageview";
+  var start=Date.now();
+  var maxScroll=0;
+  var sent=false;
+  window.addEventListener("scroll",function(){
+    var s=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight)*100;
+    if(s>maxScroll)maxScroll=Math.round(s);
+  });
+  var leaveTimer=null;
+  function sendLeave(){
+    if(sent)return;sent=true;
+    var dur=Math.round((Date.now()-start)/1000);
+    var leaveUrl=u+"?"+q+"&event=leave&duration="+dur+"&scroll_depth="+maxScroll;
+    new Image().src=leaveUrl;
+  }
+  document.addEventListener("visibilitychange",function(){
+    if(document.visibilityState==="hidden"){
+      leaveTimer=setTimeout(sendLeave,30000);
+    }else{
+      if(leaveTimer){clearTimeout(leaveTimer);leaveTimer=null}
+    }
+  });
+  window.addEventListener("pagehide",function(){if(leaveTimer)clearTimeout(leaveTimer);sendLeave()});
+})();
+</script>
+</body>
+</html>
