@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boyce Chartered Accountants | AI Agent Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { brand: { primary: '#9DFF20', secondary: '#1E293B' } },
+        fontFamily: { sans: ['Inter','system-ui','sans-serif'], mono: ['JetBrains Mono','monospace'] }
+      }}
+    }
+  </script>
+  <style>
+    @keyframes slideRight { from { opacity:0; transform:translateX(-8px) } to { opacity:1; transform:translateX(0) } }
+    .proc-step { opacity:0; animation: slideRight 0.4s ease-out forwards }
+    .proc-step:nth-child(1) { animation-delay:1.0s }
+    .proc-step:nth-child(2) { animation-delay:1.8s }
+    .proc-step:nth-child(3) { animation-delay:2.6s }
+    .proc-step:nth-child(4) { animation-delay:3.4s }
+    .proc-step:nth-child(5) { animation-delay:4.2s }
+    @keyframes outputReveal { from { opacity:0; transform:translateY(8px) } to { opacity:1; transform:translateY(0) } }
+    .output-reveal { opacity:0; animation: outputReveal 0.5s ease-out forwards; animation-delay:5.0s }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans min-h-screen">
+  <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur border-b border-brand-primary/30 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3"><img src="https://b4160617.smushcdn.com/4160617/wp-content/uploads/2023/09/cropped-Boyce-Primary-Logo-180x180.png?lossy=2&amp;strip=1&amp;webp=1" alt="Boyce Chartered Accountants" class="h-10 max-w-[180px] object-contain rounded-lg border border-gray-700 bg-white p-1" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="text-xl font-bold hidden" style="color:#9DFF20">Boyce Chartered Accountants</span></div>
+      <h1 class="text-lg font-semibold text-gray-300">AI Agent Demo</h1>
+    </div>
+  </header>
+  <div class="max-w-7xl mx-auto px-6 pt-6">
+    <div class="rounded-lg border border-brand-primary/20 bg-brand-primary/5 px-5 py-3 text-center">
+      <p class="text-sm text-gray-400">Prepared for <span class="font-medium text-white">Boyce Chartered Accountants</span> by Charlie, Zynwise |
+        <a href="https://zynwise.com" class="text-brand-primary hover:underline">zynwise.com</a></p>
+    </div>
+  </div>
+  <main class="max-w-7xl mx-auto px-6 py-6">
+    <div class="text-center mb-8">
+      <h2 class="text-2xl font-bold text-white mb-2">Client Financial Document Analysis &amp; Classification</h2>
+      <p class="text-gray-400 text-sm">Watch an AI agent automatically process and categorize client financial documents for advisory review</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-[1fr_280px_1fr] gap-6 items-start">
+      <div class="bg-gray-900 rounded-xl border border-gray-800 overflow-hidden">
+        <div class="px-4 py-3 bg-gray-800/50 border-b border-gray-800 flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-red-500/60"></span>
+          <span class="w-3 h-3 rounded-full bg-yellow-500/60"></span>
+          <span class="w-3 h-3 rounded-full bg-green-500/60"></span>
+          <span class="text-xs text-gray-500 ml-2">Client Upload</span>
+        </div>
+        <div class="p-5"><div class="space-y-3">
+  <h4 class="text-sm font-semibold text-gray-300">Riverina_Pastoral_Co_BAS_Q2_2024.pdf</h4>
+  <div class="border-t border-gray-800 pt-3">
+    <p class="text-sm text-gray-300 whitespace-pre-line leading-relaxed">BUSINESS ACTIVITY STATEMENT
+Quarter: April - June 2024
+ABN: 52 847 392 615
+Riverina Pastoral Co Pty Ltd
+
+GST collected on sales: $127,850
+GST paid on purchases: $89,420
+PAYG instalments: $45,200
+Total sales: $1,278,500
+Total purchases: $894,200
+Wages paid: $186,750
+Superannuation: $20,542
+
+Notable items:
+- New John Deere tractor purchase $185,000 (depreciation eligible)
+- Drought assistance payment received $25,000
+- Insurance claim payout $12,500</p>
+  </div>
+</div></div>
+      </div>
+      <div class="flex flex-col items-center pt-8">
+        <p class="text-xs text-gray-500 uppercase tracking-wider mb-4">Processing</p>
+        <div class="space-y-3 w-full"><div class="proc-step flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full border border-brand-primary/50 flex items-center justify-center flex-shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-brand-primary"></span></span><span class="text-xs text-gray-400">Extracting financial data and identifying document type...</span></div>
+<div class="proc-step flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full border border-brand-primary/50 flex items-center justify-center flex-shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-brand-primary"></span></span><span class="text-xs text-gray-400">Categorizing transactions by tax treatment and advisory relevance...</span></div>
+<div class="proc-step flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full border border-brand-primary/50 flex items-center justify-center flex-shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-brand-primary"></span></span><span class="text-xs text-gray-400">Cross-referencing against client&#x27;s previous quarters for variance analysis...</span></div>
+<div class="proc-step flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full border border-brand-primary/50 flex items-center justify-center flex-shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-brand-primary"></span></span><span class="text-xs text-gray-400">Identifying potential advisory opportunities and compliance items...</span></div>
+<div class="proc-step flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full border border-brand-primary/50 flex items-center justify-center flex-shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-brand-primary"></span></span><span class="text-xs text-gray-400">Generating structured summary for partner review...</span></div></div>
+      </div>
+      <div class="bg-gray-900 rounded-xl border border-brand-primary/40 overflow-hidden output-reveal">
+        <div class="px-4 py-3 bg-brand-primary/10 border-b border-brand-primary/20">
+          <span class="text-sm font-medium text-brand-primary">AI Output</span>
+        </div>
+        <div class="p-5"><div class="space-y-1"><div class="flex justify-between py-2 border-b border-gray-800/50"><span class="text-xs text-gray-400">Document Type</span><span class="text-sm font-medium text-white">BAS - Q2 2024</span></div><div class="flex justify-between py-2 border-b border-gray-800/50"><span class="text-xs text-gray-400">Client Segment</span><span class="text-sm font-medium text-white">Agricultural - Medium Enterprise</span></div><div class="flex justify-between py-2 border-b border-gray-800/50"><span class="text-xs text-gray-400">Revenue Variance</span><span class="text-sm font-medium text-white">+12.8% vs Q1 2024</span></div><div class="flex justify-between py-2 border-b border-gray-800/50"><span class="text-xs text-gray-400">Advisory Flags</span><span class="text-sm font-medium text-white">Asset depreciation, drought provisions</span></div><div class="flex justify-between py-2 border-b border-gray-800/50"><span class="text-xs text-gray-400">Compliance Status</span><span class="text-sm font-medium text-white">Complete - no missing data</span></div><div class="flex justify-between py-2 border-b border-gray-800/50"><span class="text-xs text-gray-400">Confidence</span><span class="text-sm font-medium text-white">High (94%)</span></div><div class="flex justify-between py-2 border-b border-gray-800/50"><span class="text-xs text-gray-400">Next Step</span><span class="text-sm font-medium text-white">Schedule advisory meeting for tax planning</span></div></div></div>
+      </div>
+    </div>
+    <div class="mt-8 bg-gray-900 rounded-xl border border-gray-800 p-6">
+      <div class="grid grid-cols-3 gap-4 text-center">
+        <div>
+          <p class="text-gray-400 text-sm">Manual Process</p>
+          <p class="text-xl font-bold text-red-400">~18 minutes</p>
+        </div>
+        <div>
+          <p class="text-gray-400 text-sm">AI Agent</p>
+          <p class="text-xl font-bold text-emerald-400">~12 seconds</p>
+        </div>
+        <div>
+          <p class="text-gray-400 text-sm">Faster</p>
+          <p class="text-xl font-bold text-brand-primary">98.9%</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="mt-12 py-6"></footer>
+  <script>
+(function(){
+  var u="https://script.google.com/macros/s/AKfycbxn3cozbhEIy1bRdKxOzGt3XcgQ48RtyoDNAXC6oKSDHwy8ojRxyZxkw-nDi5uvxbxK/exec";
+  var p=new URLSearchParams(window.location.search);
+  var ref=p.get("ref")||"direct";
+  var tz="";try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone}catch(e){}
+  var dev=/Mobi|Android/i.test(navigator.userAgent)?"mobile":"desktop";
+  var q="slug=boai-e46d&company_name="+encodeURIComponent("Boyce Chartered Accountants")+"&demo_type=ai_agent"
+    +"&ref="+ref+"&timezone="+encodeURIComponent(tz)+"&device="+dev;
+  new Image().src=u+"?"+q+"&event=pageview";
+  var start=Date.now();
+  var maxScroll=0;
+  var sent=false;
+  window.addEventListener("scroll",function(){
+    var s=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight)*100;
+    if(s>maxScroll)maxScroll=Math.round(s);
+  });
+  var leaveTimer=null;
+  function sendLeave(){
+    if(sent)return;sent=true;
+    var dur=Math.round((Date.now()-start)/1000);
+    var leaveUrl=u+"?"+q+"&event=leave&duration="+dur+"&scroll_depth="+maxScroll;
+    try{fetch(leaveUrl,{method:"GET",keepalive:true,mode:"no-cors"}).catch(function(){});}catch(e){new Image().src=leaveUrl}
+  }
+  document.addEventListener("visibilitychange",function(){
+    if(document.visibilityState==="hidden"){
+      leaveTimer=setTimeout(sendLeave,30000);
+    }else{
+      if(leaveTimer){clearTimeout(leaveTimer);leaveTimer=null}
+    }
+  });
+  window.addEventListener("pagehide",function(){if(leaveTimer)clearTimeout(leaveTimer);sendLeave()});
+})();
+</script>
+</body>
+</html>
