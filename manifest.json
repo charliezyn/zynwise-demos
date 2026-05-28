@@ -687,6 +687,230 @@
       "path": "plbu-fcc2",
       "created_date": "2026-05-27",
       "expiry_date": "2026-06-26"
+    },
+    {
+      "company": "Canva",
+      "slug": "caai-c940",
+      "demo_type": "ai_agent",
+      "path": "caai-c940",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Hub 39",
+      "slug": "huai-e9f2",
+      "demo_type": "workflow",
+      "path": "huai-e9f2",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Valenhold",
+      "slug": "vaai-28ab",
+      "demo_type": "workflow",
+      "path": "vaai-28ab",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Water Built",
+      "slug": "waai-b446",
+      "demo_type": "workflow",
+      "path": "waai-b446",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Insignia Financial",
+      "slug": "inai-0c70",
+      "demo_type": "workflow",
+      "path": "inai-0c70",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Envigor",
+      "slug": "ente-bd71",
+      "demo_type": "workflow",
+      "path": "ente-bd71",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Latitude IT",
+      "slug": "laai-c551",
+      "demo_type": "ai_agent",
+      "path": "laai-c551",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Glam Adelaide",
+      "slug": "glfu-0c15",
+      "demo_type": "workflow",
+      "path": "glfu-0c15",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Dyson",
+      "slug": "dyec-254c",
+      "demo_type": "dashboard",
+      "path": "dyec-254c",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Opteon",
+      "slug": "opai-6d6c",
+      "demo_type": "workflow",
+      "path": "opai-6d6c",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Instinctability",
+      "slug": "inpo-ff33",
+      "demo_type": "workflow",
+      "path": "inpo-ff33",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Camphin Boston",
+      "slug": "cadi-6300",
+      "demo_type": "workflow",
+      "path": "cadi-6300",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Plenti",
+      "slug": "plco-930a",
+      "demo_type": "workflow",
+      "path": "plco-930a",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Veolia",
+      "slug": "vedi-c9cc",
+      "demo_type": "dashboard",
+      "path": "vedi-c9cc",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Investa Property Group",
+      "slug": "inse-e4b1",
+      "demo_type": "workflow",
+      "path": "inse-e4b1",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Canva",
+      "slug": "caai-2782",
+      "demo_type": "ai_agent",
+      "path": "caai-2782",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Valenhold",
+      "slug": "vaai-465e",
+      "demo_type": "workflow",
+      "path": "vaai-465e",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Hub 39",
+      "slug": "huai-96ad",
+      "demo_type": "workflow",
+      "path": "huai-96ad",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Water Built",
+      "slug": "waai-79ad",
+      "demo_type": "workflow",
+      "path": "waai-79ad",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Envigor",
+      "slug": "ente-5bc6",
+      "demo_type": "workflow",
+      "path": "ente-5bc6",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Insignia Financial",
+      "slug": "inai-b904",
+      "demo_type": "workflow",
+      "path": "inai-b904",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Latitude IT",
+      "slug": "laai-e89d",
+      "demo_type": "ai_agent",
+      "path": "laai-e89d",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Opteon",
+      "slug": "opai-0883",
+      "demo_type": "workflow",
+      "path": "opai-0883",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Glam Adelaide",
+      "slug": "glfu-e4f4",
+      "demo_type": "workflow",
+      "path": "glfu-e4f4",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Camphin Boston",
+      "slug": "cadi-5c85",
+      "demo_type": "workflow",
+      "path": "cadi-5c85",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Instinctability",
+      "slug": "inpo-0f9f",
+      "demo_type": "workflow",
+      "path": "inpo-0f9f",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Veolia",
+      "slug": "vedi-e243",
+      "demo_type": "dashboard",
+      "path": "vedi-e243",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Investa Property Group",
+      "slug": "inse-f779",
+      "demo_type": "workflow",
+      "path": "inse-f779",
+      "created_date": "2026-05-28",
+      "expiry_date": "2026-06-27"
     }
   ]
 }
