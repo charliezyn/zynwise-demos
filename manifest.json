@@ -911,6 +911,86 @@
       "path": "inse-f779",
       "created_date": "2026-05-28",
       "expiry_date": "2026-06-27"
+    },
+    {
+      "company": "Life Insurance Partners Pty Ltd",
+      "slug": "liai-a905",
+      "demo_type": "ai_agent",
+      "path": "liai-a905",
+      "created_date": "2026-06-09",
+      "expiry_date": "2026-07-09"
+    },
+    {
+      "company": "Intrax Consulting Engineers",
+      "slug": "inbu-32d7",
+      "demo_type": "workflow",
+      "path": "inbu-32d7",
+      "created_date": "2026-06-09",
+      "expiry_date": "2026-07-09"
+    },
+    {
+      "company": "Regroup Solutions",
+      "slug": "reai-1c68",
+      "demo_type": "workflow",
+      "path": "reai-1c68",
+      "created_date": "2026-06-09",
+      "expiry_date": "2026-07-09"
+    },
+    {
+      "company": "The Royal Australian College of General Practitioners",
+      "slug": "thna-c169",
+      "demo_type": "workflow",
+      "path": "thna-c169",
+      "created_date": "2026-06-09",
+      "expiry_date": "2026-07-09"
+    },
+    {
+      "company": "Avantaus Construction",
+      "slug": "avbu-5cad",
+      "demo_type": "workflow",
+      "path": "avbu-5cad",
+      "created_date": "2026-06-09",
+      "expiry_date": "2026-07-09"
+    },
+    {
+      "company": "Abdex Industries",
+      "slug": "abdi-e256",
+      "demo_type": "workflow",
+      "path": "abdi-e256",
+      "created_date": "2026-06-09",
+      "expiry_date": "2026-07-09"
+    },
+    {
+      "company": "Sammut Group",
+      "slug": "sait-dc14",
+      "demo_type": "ai_agent",
+      "path": "sait-dc14",
+      "created_date": "2026-06-09",
+      "expiry_date": "2026-07-09"
+    },
+    {
+      "company": "Marquee Development Partners",
+      "slug": "masy-fd66",
+      "demo_type": "workflow",
+      "path": "masy-fd66",
+      "created_date": "2026-06-09",
+      "expiry_date": "2026-07-09"
+    },
+    {
+      "company": "Cappa Construction and Maintenance",
+      "slug": "caai-cabd",
+      "demo_type": "workflow",
+      "path": "caai-cabd",
+      "created_date": "2026-06-09",
+      "expiry_date": "2026-07-09"
+    },
+    {
+      "company": "Marlin Human Capital",
+      "slug": "maai-6438",
+      "demo_type": "ai_agent",
+      "path": "maai-6438",
+      "created_date": "2026-06-09",
+      "expiry_date": "2026-07-09"
     }
   ]
 }
