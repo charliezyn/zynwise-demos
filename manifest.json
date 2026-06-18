@@ -991,6 +991,118 @@
       "path": "maai-6438",
       "created_date": "2026-06-09",
       "expiry_date": "2026-07-09"
+    },
+    {
+      "company": "SeenCulture",
+      "slug": "sefo-9efa",
+      "demo_type": "workflow",
+      "path": "sefo-9efa",
+      "created_date": "2026-06-18",
+      "expiry_date": "2026-07-18"
+    },
+    {
+      "company": "Matific",
+      "slug": "maai-078c",
+      "demo_type": "workflow",
+      "path": "maai-078c",
+      "created_date": "2026-06-18",
+      "expiry_date": "2026-07-18"
+    },
+    {
+      "company": "Abano Healthcare Group",
+      "slug": "abbu-672d",
+      "demo_type": "workflow",
+      "path": "abbu-672d",
+      "created_date": "2026-06-18",
+      "expiry_date": "2026-07-18"
+    },
+    {
+      "company": "Brisbane Festival",
+      "slug": "brai-38b8",
+      "demo_type": "workflow",
+      "path": "brai-38b8",
+      "created_date": "2026-06-18",
+      "expiry_date": "2026-07-18"
+    },
+    {
+      "company": "Trilogy Care Pty Ltd",
+      "slug": "trin-56a5",
+      "demo_type": "workflow",
+      "path": "trin-56a5",
+      "created_date": "2026-06-18",
+      "expiry_date": "2026-07-18"
+    },
+    {
+      "company": "Domain Group",
+      "slug": "dobu-937a",
+      "demo_type": "workflow",
+      "path": "dobu-937a",
+      "created_date": "2026-06-18",
+      "expiry_date": "2026-07-18"
+    },
+    {
+      "company": "flybuys",
+      "slug": "flse-b2bc",
+      "demo_type": "workflow",
+      "path": "flse-b2bc",
+      "created_date": "2026-06-18",
+      "expiry_date": "2026-07-18"
+    },
+    {
+      "company": "Lifely",
+      "slug": "liec-168f",
+      "demo_type": "workflow",
+      "path": "liec-168f",
+      "created_date": "2026-06-18",
+      "expiry_date": "2026-07-18"
+    },
+    {
+      "company": "Plus Notable",
+      "slug": "plre-cc4c",
+      "demo_type": "ai_agent",
+      "path": "plre-cc4c",
+      "created_date": "2026-06-18",
+      "expiry_date": "2026-07-18"
+    },
+    {
+      "company": "Chandler",
+      "slug": "chte-7ad0",
+      "demo_type": "workflow",
+      "path": "chte-7ad0",
+      "created_date": "2026-06-18",
+      "expiry_date": "2026-07-18"
+    },
+    {
+      "company": "Global Engineering and Construction (GEC)",
+      "slug": "glap-6430",
+      "demo_type": "workflow",
+      "path": "glap-6430",
+      "created_date": "2026-06-18",
+      "expiry_date": "2026-07-18"
+    },
+    {
+      "company": "Avant Mutual Group",
+      "slug": "avim-c02f",
+      "demo_type": "workflow",
+      "path": "avim-c02f",
+      "created_date": "2026-06-18",
+      "expiry_date": "2026-07-18"
+    },
+    {
+      "company": "Guide Dogs NSW ACT",
+      "slug": "gubu-49e5",
+      "demo_type": "workflow",
+      "path": "gubu-49e5",
+      "created_date": "2026-06-18",
+      "expiry_date": "2026-07-18"
+    },
+    {
+      "company": "Plenti",
+      "slug": "plbu-217c",
+      "demo_type": "workflow",
+      "path": "plbu-217c",
+      "created_date": "2026-06-18",
+      "expiry_date": "2026-07-18"
     }
   ]
 }

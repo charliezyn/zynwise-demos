@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lifely | Automation Opportunity</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { brand: { primary: '#f9f1e5', secondary: '#1E293B' } },
+        fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+      }}
+    }
+  </script>
+  <style>
+    @keyframes fadeUp { from { opacity:0; transform:translateY(16px) } to { opacity:1; transform:translateY(0) } }
+    .step-fade { opacity:0; animation: fadeUp 0.4s ease-out forwards }
+    @keyframes countUp { from { opacity:0; transform:scale(0.8) } to { opacity:1; transform:scale(1) } }
+    .stat-pop { animation: countUp 0.5s ease-out forwards; opacity:0 }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans min-h-screen">
+  <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur border-b border-brand-primary/30 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3"><img src="http://lifely.com.au/cdn/shop/files/251212-Lifely-13.jpg?v=1769137887" alt="Lifely" class="h-10 max-w-[180px] object-contain rounded-lg border border-gray-700 bg-white p-1" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="text-xl font-bold hidden" style="color:#f9f1e5">Lifely</span></div>
+      <h1 class="text-lg font-semibold text-gray-300">Automation Opportunity</h1>
+    </div>
+  </header>
+  <div class="max-w-7xl mx-auto px-6 pt-6">
+    <div class="rounded-lg border border-brand-primary/20 bg-brand-primary/5 px-5 py-3 text-center">
+      <p class="text-sm text-gray-400">Prepared for <span class="font-medium text-white">Lifely</span> by Charlie, Zynwise |
+        <a href="https://zynwise.com" class="text-brand-primary hover:underline">zynwise.com</a></p>
+    </div>
+  </div>
+  <main class="max-w-7xl mx-auto px-6 py-6">
+    <div class="text-center mb-10">
+      <h2 class="text-2xl font-bold text-white mb-2">How Lifely Can Save 34 Hours Per Week With AI &amp; Automation</h2>
+      <p class="text-gray-400">Based on $75/hr average operational cost × 34 hrs/week × 48 working weeks</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+      <div>
+        <h3 class="text-sm font-semibold text-red-400 uppercase tracking-wider mb-6 text-center">Current Process</h3>
+        <div class="space-y-4"><div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.1s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Product Page &amp; Content Briefing</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">90 min per brief</span>
+  </div>
+  <p class="text-xs text-gray-400">Marketer manually researches product details, writes briefs from scratch for each new product page, landing page or campaign, then emails to designers and developers individually</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Marketing / Ecom Specialist</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.25s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">CRO Experiment Tracking &amp; Reporting</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">3 hrs per report</span>
+  </div>
+  <p class="text-xs text-gray-400">Ecom specialist manually pulls data from Shopify, Google Analytics and A/B testing tools, pastes into a spreadsheet and writes up weekly CRO performance summaries by hand</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Ecom AI Specialist</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.4s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Shopify Website QA Before Go-Live</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">2 hrs per release</span>
+  </div>
+  <p class="text-xs text-gray-400">Team member manually checks each updated product page, landing page or campaign page across desktop and mobile for broken links, incorrect pricing, missing images and copy errors before deployment</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Marketing / Ecom Specialist</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.5499999999999999s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Customer Review Monitoring &amp; Response Drafting</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">45 min per day</span>
+  </div>
+  <p class="text-xs text-gray-400">Marketing team manually checks reviews across Google, Trustpilot and Shopify product pages each day, then writes individual responses from scratch for negative and positive reviews</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Marketing Staff</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.7s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Paid &amp; Organic Campaign Setup &amp; Scheduling</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">2 hrs per campaign launch</span>
+  </div>
+  <p class="text-xs text-gray-400">Marketer manually duplicates previous campaigns in Meta and Google Ads, updates copy, swaps creative assets, sets budgets and schedules individually for each campaign launch or sale event</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Marketing / Ecom Specialist</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.85s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Customer Insight &amp; Segment Reporting</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">4 hrs per monthly report</span>
+  </div>
+  <p class="text-xs text-gray-400">Ecom specialist manually exports customer data from Shopify, cross-references with email platform data in spreadsheets, and writes up monthly cohort and segment performance reports for the wider team</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Ecom AI Specialist</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.9999999999999999s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">AI Workflow Documentation &amp; SOP Creation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">2 hrs per SOP</span>
+  </div>
+  <p class="text-xs text-gray-400">Team manually documents new workflows, writes SOPs from scratch and updates process guides after each campaign or system change, which is often delayed or skipped entirely due to time pressure</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Ecom AI Specialist</p>
+</div></div>
+      </div>
+      <div>
+        <h3 class="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-6 text-center">Automated Process</h3>
+        <div class="space-y-4"><div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.1s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Product Page &amp; Content Briefing</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">10 min review</span>
+  </div>
+  <p class="text-xs text-gray-400">AI agent ingests product specs, competitor references and brand guidelines to auto-generate structured creative and copy briefs, then routes them to the correct Slack channel or Asana task for the relevant team</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Claude API + Make + Asana</span>
+    <span class="text-xs text-emerald-500">Saves 8 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.25s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">CRO Experiment Tracking &amp; Reporting</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">5 min review</span>
+  </div>
+  <p class="text-xs text-gray-400">Automated pipeline pulls data from Shopify, GA4 and testing tools, compiles into a pre-formatted dashboard and generates an AI-written performance summary with flagged wins, losses and recommended next tests</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Make + GA4 API + Shopify API + Claude API</span>
+    <span class="text-xs text-emerald-500">Saves 6 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.4s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Shopify Website QA Before Go-Live</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">15 min review</span>
+  </div>
+  <p class="text-xs text-gray-400">Automated QA workflow crawls updated Shopify pages, checks for broken links, price mismatches, missing meta fields and image alt text, then posts a structured QA report to Slack before any deployment is approved</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Make + Shopify API + Custom AI Agent</span>
+    <span class="text-xs text-emerald-500">Saves 5.5 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.5499999999999999s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Customer Review Monitoring &amp; Response Drafting</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">10 min daily approval</span>
+  </div>
+  <p class="text-xs text-gray-400">Automation monitors all review platforms continuously, flags new reviews by sentiment, and generates brand-aligned draft responses for team approval — negative reviews trigger an immediate alert with a suggested resolution path</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Make + Claude API + Slack</span>
+    <span class="text-xs text-emerald-500">Saves 4 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.7s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Paid &amp; Organic Campaign Setup &amp; Scheduling</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">20 min review and publish</span>
+  </div>
+  <p class="text-xs text-gray-400">Campaign template library with pre-built structures allows AI-assisted brief-to-campaign workflow — copy variations are generated by AI, assets are pulled from the DAM, and campaigns are staged for one-click review and launch</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Make + Claude API + Meta API + Google Ads API</span>
+    <span class="text-xs text-emerald-500">Saves 5 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.85s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Customer Insight &amp; Segment Reporting</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">15 min review</span>
+  </div>
+  <p class="text-xs text-gray-400">Automated data pipeline syncs Shopify customer data with Klaviyo or email platform, generates segmented cohort analysis and produces a plain-English AI summary of customer behaviour trends, churn signals and upsell opportunities</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Make + Shopify API + Klaviyo API + Claude API</span>
+    <span class="text-xs text-emerald-500">Saves 3 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.9999999999999999s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">AI Workflow Documentation &amp; SOP Creation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">15 min review</span>
+  </div>
+  <p class="text-xs text-gray-400">AI agent monitors completed workflow builds and campaign processes, auto-generates draft SOPs and prompt templates in a shared Notion workspace, ready for a quick human review and publish</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Claude API + Make + Notion API</span>
+    <span class="text-xs text-emerald-500">Saves 2.5 hrs/week</span>
+  </div>
+</div></div>
+      </div>
+    </div>
+    <div class="bg-gray-900 rounded-xl border border-brand-primary/30 p-8">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        <div class="stat-pop" style="animation-delay:0.8s">
+          <p class="text-gray-400 text-sm mb-1">Hours Saved Per Week</p>
+          <p class="text-3xl font-bold text-brand-primary">34</p>
+        </div>
+        <div class="stat-pop" style="animation-delay:1.0s">
+          <p class="text-gray-400 text-sm mb-1">Annual Value</p>
+          <p class="text-3xl font-bold text-emerald-400">$122,400</p>
+        </div>
+        <div class="stat-pop" style="animation-delay:1.2s">
+          <p class="text-gray-400 text-sm mb-1">Processes Automated</p>
+          <p class="text-3xl font-bold text-white">7</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="mt-12 py-6"></footer>
+  <script>
+(function(){
+  var u="https://script.google.com/macros/s/AKfycbxn3cozbhEIy1bRdKxOzGt3XcgQ48RtyoDNAXC6oKSDHwy8ojRxyZxkw-nDi5uvxbxK/exec";
+  var p=new URLSearchParams(window.location.search);
+  var ref=p.get("ref")||"direct";
+  var tz="";try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone}catch(e){}
+  var dev=/Mobi|Android/i.test(navigator.userAgent)?"mobile":"desktop";
+  var q="slug=liec-168f&company_name="+encodeURIComponent("Lifely")+"&demo_type=workflow"
+    +"&ref="+ref+"&timezone="+encodeURIComponent(tz)+"&device="+dev;
+  new Image().src=u+"?"+q+"&event=pageview";
+  var start=Date.now();
+  var maxScroll=0;
+  var sent=false;
+  window.addEventListener("scroll",function(){
+    var s=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight)*100;
+    if(s>maxScroll)maxScroll=Math.round(s);
+  });
+  var leaveTimer=null;
+  function sendLeave(){
+    if(sent)return;sent=true;
+    var dur=Math.round((Date.now()-start)/1000);
+    var leaveUrl=u+"?"+q+"&event=leave&duration="+dur+"&scroll_depth="+maxScroll;
+    fetch(leaveUrl,{method:"GET",keepalive:true}).catch(function(){});
+  }
+  document.addEventListener("visibilitychange",function(){
+    if(document.visibilityState==="hidden"){
+      leaveTimer=setTimeout(sendLeave,30000);
+    }else{
+      if(leaveTimer){clearTimeout(leaveTimer);leaveTimer=null}
+    }
+  });
+  window.addEventListener("pagehide",function(){if(leaveTimer)clearTimeout(leaveTimer);sendLeave()});
+})();
+</script>
+</body>
+</html>
