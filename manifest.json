@@ -1103,6 +1103,54 @@
       "path": "plbu-217c",
       "created_date": "2026-06-18",
       "expiry_date": "2026-07-18"
+    },
+    {
+      "company": "UniLodge",
+      "slug": "unbu-3c15",
+      "demo_type": "ai_agent",
+      "path": "unbu-3c15",
+      "created_date": "2026-06-29",
+      "expiry_date": "2026-07-29"
+    },
+    {
+      "company": "Yakka Finance",
+      "slug": "yaop-62c3",
+      "demo_type": "ai_agent",
+      "path": "yaop-62c3",
+      "created_date": "2026-06-29",
+      "expiry_date": "2026-07-29"
+    },
+    {
+      "company": "Virgin Australia",
+      "slug": "vibu-47c5",
+      "demo_type": "ai_agent",
+      "path": "vibu-47c5",
+      "created_date": "2026-06-29",
+      "expiry_date": "2026-07-29"
+    },
+    {
+      "company": "Profusion Group",
+      "slug": "prte-443b",
+      "demo_type": "workflow",
+      "path": "prte-443b",
+      "created_date": "2026-06-29",
+      "expiry_date": "2026-07-29"
+    },
+    {
+      "company": "Profusion Group",
+      "slug": "prte-77d6",
+      "demo_type": "workflow",
+      "path": "prte-77d6",
+      "created_date": "2026-06-29",
+      "expiry_date": "2026-07-29"
+    },
+    {
+      "company": "Innovior",
+      "slug": "inbu-ee2f",
+      "demo_type": "workflow",
+      "path": "inbu-ee2f",
+      "created_date": "2026-06-29",
+      "expiry_date": "2026-07-29"
     }
   ]
 }
