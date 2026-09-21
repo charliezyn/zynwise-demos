@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software at Scale | Automation Opportunity</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { brand: { primary: '#8c1c31', secondary: '#1E293B' } },
+        fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+      }}
+    }
+  </script>
+  <style>
+    @keyframes fadeUp { from { opacity:0; transform:translateY(16px) } to { opacity:1; transform:translateY(0) } }
+    .step-fade { opacity:0; animation: fadeUp 0.4s ease-out forwards }
+    @keyframes countUp { from { opacity:0; transform:scale(0.8) } to { opacity:1; transform:scale(1) } }
+    .stat-pop { animation: countUp 0.5s ease-out forwards; opacity:0 }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans min-h-screen">
+  <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur border-b border-brand-primary/30 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3"><img src="https://softwareatscale.com.au/public/images/open-graph.jpg" alt="Software at Scale" class="h-10 max-w-[180px] object-contain rounded-lg border border-gray-700 bg-white p-1" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="text-xl font-bold hidden" style="color:#8c1c31">Software at Scale</span></div>
+      <h1 class="text-lg font-semibold text-gray-300">Automation Opportunity</h1>
+    </div>
+  </header>
+  <div class="max-w-7xl mx-auto px-6 pt-6">
+    <div class="rounded-lg border border-brand-primary/20 bg-brand-primary/5 px-5 py-3 text-center">
+      <p class="text-sm text-gray-400">Prepared for <span class="font-medium text-white">Software at Scale</span> by Charlie, Zynwise |
+        <a href="https://zynwise.com" class="text-brand-primary hover:underline">zynwise.com</a></p>
+    </div>
+  </div>
+  <main class="max-w-7xl mx-auto px-6 py-6">
+    <div class="text-center mb-10">
+      <h2 class="text-2xl font-bold text-white mb-2">How Software at Scale Can Save 34 Hours Per Week</h2>
+      <p class="text-gray-400">Based on $80/hr average operational cost × 34 hrs/week × 48 working weeks</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+      <div>
+        <h3 class="text-sm font-semibold text-red-400 uppercase tracking-wider mb-6 text-center">Current Process</h3>
+        <div class="space-y-4"><div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.1s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">AI-Assisted Code Review &amp; Quality Gate Automation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">45 min per PR, ~20 PRs/week across teams</span>
+  </div>
+  <p class="text-xs text-gray-400">Principal engineers and senior developers manually review pull requests, check for quality standards, and write review comments across multiple repositories — repeated for every PR across teams</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Principal Engineers / Senior Developers</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.25s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Continuous Delivery Pipeline Failure Triage</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">25 min per failure event, ~8 events/week</span>
+  </div>
+  <p class="text-xs text-gray-400">Engineers manually investigate CI/CD pipeline failures — reading logs, identifying root cause, determining whether to rerun or escalate. Often interrupts deep work cycles</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Principal Engineers / DevOps Engineers</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.4s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Client Project Status Reporting</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">2.5 hrs per report, 2 reports/week across active engagements</span>
+  </div>
+  <p class="text-xs text-gray-400">Engineers and project leads manually compile sprint progress, blockers, velocity metrics, and delivery forecasts into client-facing status reports for financial and commercial institution stakeholders</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Principal Engineers / Delivery Leads</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.5499999999999999s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">New Client Engagement Onboarding</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">3 hrs per new engagement, ~1 new engagement per week</span>
+  </div>
+  <p class="text-xs text-gray-400">When a new client engagement begins, staff manually coordinate NDAs, access provisioning requests, environment setup checklists, and onboarding documentation — tracked across email and spreadsheets</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Principal Engineers / Operations</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.7s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Test Coverage &amp; Quality Metrics Aggregation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">1.5 hrs per week to collate and format into a single view</span>
+  </div>
+  <p class="text-xs text-gray-400">Quality and engineering leads manually gather test coverage reports, static analysis outputs, and deployment frequency metrics from disparate tools to track progress on the engineering-led quality transformation</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Principal Engineers / QA Leads</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.85s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Candidate &amp; Contractor Technical Screening</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">40 min per candidate, ~4 candidates/week</span>
+  </div>
+  <p class="text-xs text-gray-400">As a consultancy scaling specialist teams, principal engineers spend time reviewing CVs, preparing technical screen questions, and summarising candidate suitability ahead of interviews</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Principal Engineers</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.9999999999999999s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Compliance &amp; Regulatory Documentation Checks</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">2 hrs per compliance review, ~1 per week</span>
+  </div>
+  <p class="text-xs text-gray-400">For financial institution clients, engineers and delivery leads manually verify that technical documentation, architecture decision records, and deployment artefacts meet regulatory and compliance requirements before submission</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Principal Engineers / Delivery Leads</p>
+</div></div>
+      </div>
+      <div>
+        <h3 class="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-6 text-center">Automated Process</h3>
+        <div class="space-y-4"><div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.1s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">AI-Assisted Code Review &amp; Quality Gate Automation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">2 min (human reviews AI summary only)</span>
+  </div>
+  <p class="text-xs text-gray-400">AI agent auto-scans PRs for code quality, security anti-patterns, test coverage gaps, and style violations. Structured summary posted to GitHub/GitLab with suggested fixes before human review begins</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Claude API + GitHub Actions</span>
+    <span class="text-xs text-emerald-500">Saves 12 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.25s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Continuous Delivery Pipeline Failure Triage</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">0 min for known failure types, 5 min for novel ones</span>
+  </div>
+  <p class="text-xs text-gray-400">Automated log analysis agent classifies pipeline failures by type (flaky test, infra issue, dependency conflict), posts diagnosis and recommended action to Slack channel, and auto-reruns known flaky failures</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">n8n + Claude API + Slack</span>
+    <span class="text-xs text-emerald-500">Saves 6 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.4s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Client Project Status Reporting</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">10 min review only</span>
+  </div>
+  <p class="text-xs text-gray-400">Automated workflow pulls data from Jira/Linear, GitHub commit activity, and deployment logs — generates structured client report draft using AI, ready for a 10-minute human review before sending</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Make + Jira API + Claude API</span>
+    <span class="text-xs text-emerald-500">Saves 8 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.5499999999999999s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">New Client Engagement Onboarding</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">15 min to review and approve automated outputs</span>
+  </div>
+  <p class="text-xs text-gray-400">Triggered onboarding workflow automatically sends NDA via e-signature, creates project board, provisions environment access requests, and generates onboarding documentation package from template</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Make + Airtable + DocuSign API</span>
+    <span class="text-xs text-emerald-500">Saves 2.75 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.7s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Test Coverage &amp; Quality Metrics Aggregation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">0 min — always current</span>
+  </div>
+  <p class="text-xs text-gray-400">Automated dashboard pipeline pulls test coverage, linting scores, DORA metrics, and deployment success rates from all tools into a single live dashboard updated on every deploy</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">n8n + GitHub Actions + Monday.com</span>
+    <span class="text-xs text-emerald-500">Saves 1.5 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.85s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Candidate &amp; Contractor Technical Screening</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">10 min to review AI summary per candidate</span>
+  </div>
+  <p class="text-xs text-gray-400">AI agent screens CVs against role requirements, scores candidates on key technical criteria, generates tailored technical interview questions, and posts summary to hiring Slack channel for engineer review</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Make + Claude API + Slack</span>
+    <span class="text-xs text-emerald-500">Saves 2 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.9999999999999999s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Compliance &amp; Regulatory Documentation Checks</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">20 min human sign-off</span>
+  </div>
+  <p class="text-xs text-gray-400">AI document review agent checks artefacts against a pre-configured compliance checklist (relevant to financial sector standards), flags gaps, and produces a signed-off checklist ready for human approval</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Claude API + n8n + SharePoint</span>
+    <span class="text-xs text-emerald-500">Saves 1.67 hrs/week</span>
+  </div>
+</div></div>
+      </div>
+    </div>
+    <div class="bg-gray-900 rounded-xl border border-brand-primary/30 p-8">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        <div class="stat-pop" style="animation-delay:0.8s">
+          <p class="text-gray-400 text-sm mb-1">Hours Saved Per Week</p>
+          <p class="text-3xl font-bold text-brand-primary">34</p>
+        </div>
+        <div class="stat-pop" style="animation-delay:1.0s">
+          <p class="text-gray-400 text-sm mb-1">Annual Value</p>
+          <p class="text-3xl font-bold text-emerald-400">$130,560</p>
+        </div>
+        <div class="stat-pop" style="animation-delay:1.2s">
+          <p class="text-gray-400 text-sm mb-1">Processes Automated</p>
+          <p class="text-3xl font-bold text-white">7</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="mt-12 py-6"></footer>
+  <script>
+(function(){
+  var u="https://script.google.com/macros/s/AKfycbxn3cozbhEIy1bRdKxOzGt3XcgQ48RtyoDNAXC6oKSDHwy8ojRxyZxkw-nDi5uvxbxK/exec";
+  var p=new URLSearchParams(window.location.search);
+  var ref=p.get("ref")||"direct";
+  var tz="";try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone}catch(e){}
+  var dev=/Mobi|Android/i.test(navigator.userAgent)?"mobile":"desktop";
+  var q="slug=sopr-2069&company_name="+encodeURIComponent("Software at Scale")+"&demo_type=workflow"
+    +"&ref="+ref+"&timezone="+encodeURIComponent(tz)+"&device="+dev;
+  new Image().src=u+"?"+q+"&event=pageview";
+  var start=Date.now();
+  var maxScroll=0;
+  var sent=false;
+  window.addEventListener("scroll",function(){
+    var s=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight)*100;
+    if(s>maxScroll)maxScroll=Math.round(s);
+  });
+  var leaveTimer=null;
+  function sendLeave(){
+    if(sent)return;sent=true;
+    var dur=Math.round((Date.now()-start)/1000);
+    var leaveUrl=u+"?"+q+"&event=leave&duration="+dur+"&scroll_depth="+maxScroll;
+    fetch(leaveUrl,{method:"GET",keepalive:true}).catch(function(){});
+  }
+  document.addEventListener("visibilitychange",function(){
+    if(document.visibilityState==="hidden"){
+      leaveTimer=setTimeout(sendLeave,30000);
+    }else{
+      if(leaveTimer){clearTimeout(leaveTimer);leaveTimer=null}
+    }
+  });
+  window.addEventListener("pagehide",function(){if(leaveTimer)clearTimeout(leaveTimer);sendLeave()});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flybuys | Automation Opportunity</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { brand: { primary: '#000', secondary: '#1E293B' } },
+        fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+      }}
+    }
+  </script>
+  <style>
+    @keyframes fadeUp { from { opacity:0; transform:translateY(16px) } to { opacity:1; transform:translateY(0) } }
+    .step-fade { opacity:0; animation: fadeUp 0.4s ease-out forwards }
+    @keyframes countUp { from { opacity:0; transform:scale(0.8) } to { opacity:1; transform:scale(1) } }
+    .stat-pop { animation: countUp 0.5s ease-out forwards; opacity:0 }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans min-h-screen">
+  <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur border-b border-brand-primary/30 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3"><img src="https://experience.flybuys.com.au/icons/icon-48x48.png?v=50ded803763fe55136c65c7d551efbe3" alt="flybuys" class="h-10 max-w-[180px] object-contain rounded-lg border border-gray-700 bg-white p-1" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="text-xl font-bold hidden" style="color:#000">flybuys</span></div>
+      <h1 class="text-lg font-semibold text-gray-300">Automation Opportunity</h1>
+    </div>
+  </header>
+  <div class="max-w-7xl mx-auto px-6 pt-6">
+    <div class="rounded-lg border border-brand-primary/20 bg-brand-primary/5 px-5 py-3 text-center">
+      <p class="text-sm text-gray-400">Prepared for <span class="font-medium text-white">flybuys</span> by Charlie, Zynwise |
+        <a href="https://zynwise.com" class="text-brand-primary hover:underline">zynwise.com</a></p>
+    </div>
+  </div>
+  <main class="max-w-7xl mx-auto px-6 py-6">
+    <div class="text-center mb-10">
+      <h2 class="text-2xl font-bold text-white mb-2">How Flybuys Can Save 34 Hours Per Week with Workflow Automation</h2>
+      <p class="text-gray-400">Based on $80/hr average operational cost × 34 hrs/week × 48 working weeks</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+      <div>
+        <h3 class="text-sm font-semibold text-red-400 uppercase tracking-wider mb-6 text-center">Current Process</h3>
+        <div class="space-y-4"><div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.1s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Partner Brief Ingestion &amp; Structuring</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">90 min per brief</span>
+  </div>
+  <p class="text-xs text-gray-400">Marketing engineers manually read partner campaign briefs, extract offer mechanics, audience rules and creative requirements, then reformat into internal campaign specs across spreadsheets and documents</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: AI Marketing Engineer / Campaign Manager</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.25s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Liquid Code Generation for Braze Campaigns</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">2–3 hrs per campaign</span>
+  </div>
+  <p class="text-xs text-gray-400">Engineers manually write Liquid personalisation logic, dynamic content blocks, offer mechanics and fallback content for each Braze campaign, then hand-check syntax before QA</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: AI Marketing Engineer</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.4s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Creative Asset Assembly &amp; Variation Generation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">2 hrs per campaign set</span>
+  </div>
+  <p class="text-xs text-gray-400">Designers and engineers manually assemble channel-ready creative variations by combining offer copy, partner logos, imagery and brand guidelines for each campaign and channel format</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Marketing Engineer / Designer</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.5499999999999999s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Campaign QA &amp; Pre-Launch Validation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">60–90 min per campaign</span>
+  </div>
+  <p class="text-xs text-gray-400">Engineers manually test Liquid syntax, validate offer logic, check audience rule conflicts, verify fallback content renders correctly, and confirm compliance requirements are met before campaigns are approved for launch</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: AI Marketing Engineer</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.7s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Approval Workflow Routing &amp; Status Tracking</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">45 min per campaign</span>
+  </div>
+  <p class="text-xs text-gray-400">Campaign managers manually email stakeholders for approvals, chase responses, update status spreadsheets and re-notify teams when campaigns are cleared for launch — causing delays and version confusion</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Campaign Manager / Marketing Engineer</p>
+</div>
+<div class="step-fade bg-red-950/20 border border-red-900/30 rounded-xl p-4" style="animation-delay:0.85s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Offer Performance Reporting &amp; Insights Compilation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-red-900/40 text-red-400">3 hrs per report</span>
+  </div>
+  <p class="text-xs text-gray-400">Analysts manually pull campaign performance data from multiple platforms, consolidate into spreadsheets and format partner-facing reports showing offer redemption, member engagement and revenue metrics</p>
+  <p class="text-xs text-gray-500 mt-1">Done by: Marketing Analyst / Engineer</p>
+</div></div>
+      </div>
+      <div>
+        <h3 class="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-6 text-center">Automated Process</h3>
+        <div class="space-y-4"><div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.1s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Partner Brief Ingestion &amp; Structuring</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">5 min review</span>
+  </div>
+  <p class="text-xs text-gray-400">Partner briefs submitted via structured form or email are auto-parsed by an AI agent, key fields extracted (offer type, audience segment, creative specs, compliance flags), and a structured campaign record created in Airtable ready for build</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Claude API + Make + Airtable</span>
+    <span class="text-xs text-emerald-500">Saves 8 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.25s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Liquid Code Generation for Braze Campaigns</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">15 min review</span>
+  </div>
+  <p class="text-xs text-gray-400">Structured campaign record triggers an AI generation pipeline that produces validated Liquid templates with personalisation rules, offer logic, fallback content and error handling — pre-checked for syntax errors before engineer review</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Claude API + n8n + Braze API</span>
+    <span class="text-xs text-emerald-500">Saves 10 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.4s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Creative Asset Assembly &amp; Variation Generation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">20 min review</span>
+  </div>
+  <p class="text-xs text-gray-400">AI assembly layer pulls approved offer inputs, partner assets and brand standards from Airtable, generates copy variations and imagery prompts, and outputs approval-ready creative assets formatted per channel spec</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Claude API + Make + Figma API</span>
+    <span class="text-xs text-emerald-500">Saves 6 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.5499999999999999s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Campaign QA &amp; Pre-Launch Validation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">10 min review</span>
+  </div>
+  <p class="text-xs text-gray-400">Automated QA pipeline runs syntax validation, logic checks, audience rule conflict detection and compliance flag scanning across every campaign before it reaches human review — flagging issues with specific line references</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">n8n + custom AI agent + Braze API</span>
+    <span class="text-xs text-emerald-500">Saves 5 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.7s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Approval Workflow Routing &amp; Status Tracking</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">5 min</span>
+  </div>
+  <p class="text-xs text-gray-400">Campaign record status changes automatically trigger approval requests to the correct stakeholders via Slack and email, with deadline reminders, approval capture and automatic launch hand-off notification when all sign-offs are received</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">Make + Slack API + Airtable</span>
+    <span class="text-xs text-emerald-500">Saves 3 hrs/week</span>
+  </div>
+</div>
+<div class="step-fade bg-emerald-950/20 border border-emerald-900/30 rounded-xl p-4" style="animation-delay:0.85s">
+  <div class="flex items-center justify-between mb-2">
+    <h4 class="text-sm font-semibold text-white">Offer Performance Reporting &amp; Insights Compilation</h4>
+    <span class="text-xs font-mono px-2 py-1 rounded bg-emerald-900/40 text-emerald-400">15 min review</span>
+  </div>
+  <p class="text-xs text-gray-400">Scheduled automation pulls performance data from Braze and internal data sources, calculates key metrics, populates a standardised report template and distributes partner-ready summaries to stakeholders automatically each week</p>
+  <div class="flex items-center gap-3 mt-1">
+    <span class="text-xs text-brand-primary">n8n + Braze API + Google Slides API</span>
+    <span class="text-xs text-emerald-500">Saves 2 hrs/week</span>
+  </div>
+</div></div>
+      </div>
+    </div>
+    <div class="bg-gray-900 rounded-xl border border-brand-primary/30 p-8">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        <div class="stat-pop" style="animation-delay:0.8s">
+          <p class="text-gray-400 text-sm mb-1">Hours Saved Per Week</p>
+          <p class="text-3xl font-bold text-brand-primary">34</p>
+        </div>
+        <div class="stat-pop" style="animation-delay:1.0s">
+          <p class="text-gray-400 text-sm mb-1">Annual Value</p>
+          <p class="text-3xl font-bold text-emerald-400">$130,560</p>
+        </div>
+        <div class="stat-pop" style="animation-delay:1.2s">
+          <p class="text-gray-400 text-sm mb-1">Processes Automated</p>
+          <p class="text-3xl font-bold text-white">6</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="mt-12 py-6"></footer>
+  <script>
+(function(){
+  var u="https://script.google.com/macros/s/AKfycbxn3cozbhEIy1bRdKxOzGt3XcgQ48RtyoDNAXC6oKSDHwy8ojRxyZxkw-nDi5uvxbxK/exec";
+  var p=new URLSearchParams(window.location.search);
+  var ref=p.get("ref")||"direct";
+  var tz="";try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone}catch(e){}
+  var dev=/Mobi|Android/i.test(navigator.userAgent)?"mobile":"desktop";
+  var q="slug=flai-aa15&company_name="+encodeURIComponent("flybuys")+"&demo_type=workflow"
+    +"&ref="+ref+"&timezone="+encodeURIComponent(tz)+"&device="+dev;
+  new Image().src=u+"?"+q+"&event=pageview";
+  var start=Date.now();
+  var maxScroll=0;
+  var sent=false;
+  window.addEventListener("scroll",function(){
+    var s=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight)*100;
+    if(s>maxScroll)maxScroll=Math.round(s);
+  });
+  var leaveTimer=null;
+  function sendLeave(){
+    if(sent)return;sent=true;
+    var dur=Math.round((Date.now()-start)/1000);
+    var leaveUrl=u+"?"+q+"&event=leave&duration="+dur+"&scroll_depth="+maxScroll;
+    fetch(leaveUrl,{method:"GET",keepalive:true}).catch(function(){});
+  }
+  document.addEventListener("visibilitychange",function(){
+    if(document.visibilityState==="hidden"){
+      leaveTimer=setTimeout(sendLeave,30000);
+    }else{
+      if(leaveTimer){clearTimeout(leaveTimer);leaveTimer=null}
+    }
+  });
+  window.addEventListener("pagehide",function(){if(leaveTimer)clearTimeout(leaveTimer);sendLeave()});
+})();
+</script>
+</body>
+</html>

@@ -1151,6 +1151,94 @@
       "path": "inbu-ee2f",
       "created_date": "2026-06-29",
       "expiry_date": "2026-07-29"
+    },
+    {
+      "company": "Dispensed",
+      "slug": "dihe-51e8",
+      "demo_type": "workflow",
+      "path": "dihe-51e8",
+      "created_date": "2026-09-21",
+      "expiry_date": "2026-10-21"
+    },
+    {
+      "company": "Centrepoint Alliance",
+      "slug": "cero-c8a7",
+      "demo_type": "workflow",
+      "path": "cero-c8a7",
+      "created_date": "2026-09-21",
+      "expiry_date": "2026-10-21"
+    },
+    {
+      "company": "Pacific Automation",
+      "slug": "paai-adab",
+      "demo_type": "workflow",
+      "path": "paai-adab",
+      "created_date": "2026-09-21",
+      "expiry_date": "2026-10-21"
+    },
+    {
+      "company": "Woods & Co",
+      "slug": "woai-ab9e",
+      "demo_type": "ai_agent",
+      "path": "woai-ab9e",
+      "created_date": "2026-09-21",
+      "expiry_date": "2026-10-21"
+    },
+    {
+      "company": "Software at Scale",
+      "slug": "sopr-2069",
+      "demo_type": "workflow",
+      "path": "sopr-2069",
+      "created_date": "2026-09-21",
+      "expiry_date": "2026-10-21"
+    },
+    {
+      "company": "flybuys",
+      "slug": "flai-aa15",
+      "demo_type": "workflow",
+      "path": "flai-aa15",
+      "created_date": "2026-09-21",
+      "expiry_date": "2026-10-21"
+    },
+    {
+      "company": "HITCH42 PTY LTD",
+      "slug": "hiai-5834",
+      "demo_type": "workflow",
+      "path": "hiai-5834",
+      "created_date": "2026-09-21",
+      "expiry_date": "2026-10-21"
+    },
+    {
+      "company": "Garvan Institute of Medical Research",
+      "slug": "gafo-df0e",
+      "demo_type": "ai_agent",
+      "path": "gafo-df0e",
+      "created_date": "2026-09-21",
+      "expiry_date": "2026-10-21"
+    },
+    {
+      "company": "Insource Automation Pty Ltd",
+      "slug": "inau-7f45",
+      "demo_type": "workflow",
+      "path": "inau-7f45",
+      "created_date": "2026-09-21",
+      "expiry_date": "2026-10-21"
+    },
+    {
+      "company": "BX Bunka Australia",
+      "slug": "bxpo-c479",
+      "demo_type": "workflow",
+      "path": "bxpo-c479",
+      "created_date": "2026-09-21",
+      "expiry_date": "2026-10-21"
+    },
+    {
+      "company": "Coates",
+      "slug": "coai-4595",
+      "demo_type": "workflow",
+      "path": "coai-4595",
+      "created_date": "2026-09-21",
+      "expiry_date": "2026-10-21"
     }
   ]
 }
