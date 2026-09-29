@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Charlie Jessey, systems I build</title>
+<meta name="description" content="A walkthrough of the operations dashboard, automation and CRM systems Charlie Jessey has built for Australian businesses, with case studies and the tools behind each one.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0f17;--panel:#121826;--panel2:#171f30;--line:#243047;--text:#e6e9ef;--muted:#98a2b8;--accent:#f4703b;--accent2:#7c3aed;--good:#3ecf8e;--warn:#f5b342;--maxw:1100px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:#c4b5fd}a:hover{color:#ddd6fe}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+header.top{padding:56px 0 28px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+h1{font-size:clamp(28px,4.4vw,44px);line-height:1.12;margin:10px 0 14px;letter-spacing:-.02em}
+.lede{font-size:18px;color:var(--muted);max-width:760px;margin:0 0 22px}
+nav.jump{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+nav.jump a{font-size:13px;color:var(--text);text-decoration:none;border:1px solid var(--line);padding:6px 12px;border-radius:999px;background:var(--panel)}
+nav.jump a:hover{border-color:#3b4a68}
+section{padding:44px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(22px,3vw,30px);margin:0 0 6px;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:0 0 26px;max-width:760px}
+.badge{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);vertical-align:middle}
+.badge.delivered{color:var(--good);border-color:rgba(62,207,142,.35)}
+.badge.est{color:var(--warn);border-color:rgba(245,179,66,.35)}
+.badge.wip{color:#c4b5fd;border-color:rgba(124,58,237,.45)}
+.flag{display:flex;gap:10px;align-items:flex-start;background:rgba(245,179,66,.08);border:1px solid rgba(245,179,66,.3);border-radius:10px;padding:12px 14px;font-size:14px;color:#f3e2bd;margin:0 0 18px}
+.shot{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#000;margin:0 0 10px}
+.shot img{display:block;width:100%;height:auto}
+.caption{font-size:13px;color:var(--muted);margin:0 0 22px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:820px){.grid2,.grid3{grid-template-columns:1fr}}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
+@media (max-width:700px){.gallery{grid-template-columns:1fr}}
+.gallery figure{margin:0}.gallery figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 22px;display:flex;flex-direction:column;gap:10px}
+.card h3{margin:0;font-size:17px;line-height:1.3}
+.card .who{font-size:13px;color:var(--muted)}
+.card dl{margin:0;display:grid;grid-template-columns:86px 1fr;gap:6px 12px;font-size:14px}
+.card dt{color:var(--muted)}.card dd{margin:0}
+.card .outcome{margin-top:4px;padding:12px 14px;border-radius:10px;background:var(--panel2);font-size:14px;border-left:3px solid var(--accent)}
+.tools{display:flex;flex-wrap:wrap;gap:6px}
+.tools span{font-size:12px;background:var(--panel2);border:1px solid var(--line);padding:3px 9px;border-radius:6px;color:#cbd2e0}
+.toolgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.toolgrid a{display:block;text-decoration:none;color:var(--text);background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.toolgrid a:hover{border-color:#3b4a68}
+.toolgrid b{display:block;font-size:14px}.toolgrid small{color:var(--muted);font-size:12px}
+.chart{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.chart h4{margin:0 0 4px;font-size:14px}.chart p{margin:0 0 10px;font-size:13px;color:var(--muted)}
+svg text{font-family:Inter,system-ui,sans-serif}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}@media (max-width:560px){.steps{grid-template-columns:1fr}}
+.step{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+.step .n{font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.1em}
+.step h3{margin:6px 0 8px;font-size:16px}
+.step p{margin:0 0 10px;font-size:14px;color:var(--muted)}
+.excerpt{font-size:13px;line-height:1.5;background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:12px;color:#d5dbe7;white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;max-height:260px;overflow:auto}
+.excerpt.prose{font-family:Inter,system-ui,sans-serif;white-space:normal}
+.excerpt table{border-collapse:collapse;width:100%;font-family:Inter,system-ui,sans-serif}
+.excerpt th,.excerpt td{text-align:left;padding:4px 6px;border-bottom:1px solid var(--line);font-size:12.5px}
+.excerpt th{color:var(--muted);font-weight:600}
+footer{padding:36px 0 60px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer .cta{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+footer .cta a{text-decoration:none;color:#fff;background:var(--accent2);padding:10px 16px;border-radius:10px;font-weight:600}
+footer .cta a.ghost{background:transparent;border:1px solid var(--line);color:var(--text)}
+.note{font-size:13px;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <div class="eyebrow">Charlie Jessey · AI and automation · Brisbane</div>
+  <h1>The systems I build, and what they did for the businesses that run on them.</h1>
+  <p class="lede">A short walkthrough for hiring managers. One production application you can look through, six case studies in the same shape, every tool tied to the job it was used on, and how I work from the first call to handover.</p>
+  <nav class="jump">
+    <a href="#flagship">Operations dashboard</a>
+    <a href="#cases">Case studies</a>
+    <a href="#tools">Tools to evidence</a>
+    <a href="#own">Systems I run myself</a>
+    <a href="#how">How I work</a>
+  </nav>
+</div></header>
+
+<section id="flagship"><div class="wrap">
+  <div class="eyebrow">Flagship · production web application</div>
+  <h2>Operations dashboard for a multi-city trade business <span class="badge delivered">Delivered, in daily use</span></h2>
+  <p class="sub">Three city managers were consolidating the business by hand every week across Tradify, Xero, Notion and Google Sheets. This replaced that with one system: builder check-in cycles, contractor profiles and gross profit, four sales queues, a nightly data sync with a plain-language troubleshooting panel, and access control enforced in the database so each manager sees only their city.</p>
+  <div class="flag"><span>&#9432;</span><span>Screens below show the delivered application with sample data. Company and people names are fictional and figures are randomised. A clickable demo on a synthetic dataset is being prepared and will replace these screens at the same link.</span></div>
+
+  <div class="shot"><img src="assets/admin-home.jpg" alt="Overview screen: builder check-ins due, follow-up queues, contractor review status, and gross profit across all cities" loading="eager"></div>
+  <p class="caption">Overview, administrator view. Everything a manager needs to act on today, across all cities: check-ins due, follow-up queues, review status and the month's gross profit from Tradify.</p>
+
+  <div class="gallery">
+    <figure><div class="shot"><img src="assets/manager-home.jpg" alt="The same overview for a city manager, scoped to Melbourne only" loading="lazy"></div><figcaption>The same overview for a city manager. The scope is enforced by row-level security in Postgres, not hidden in the interface.</figcaption></figure>
+    <figure><div class="shot"><img src="assets/admin-check-ins.jpg" alt="Builder check-in cycle with health bands, status filters and due dates" loading="lazy"></div><figcaption>Builder check-in cycle: cadence and health thresholds are settings the client can change, not code.</figcaption></figure>
+    <figure><div class="shot"><img src="assets/admin-contractors.jpg" alt="Contractor roster with skill level, competency progress, gross profit on jobs worked and review status" loading="lazy"></div><figcaption>Contractor profiles: competency sign-offs, gross profit on jobs worked, and in-house review cadence.</figcaption></figure>
+    <figure><div class="shot"><img src="assets/admin-settings.jpg" alt="Settings screen showing data sync status, write-back status and access invitations" loading="lazy"></div><figcaption>Settings: sync and write-back status written for a non-technical manager, and invitation-only access.</figcaption></figure>
+  </div>
+  <p class="caption" style="margin-top:14px"><b>Stack:</b> Next.js 16 App Router, TypeScript, Supabase (Postgres, Auth, Storage, RLS), Drizzle, Vercel (Sydney), Sentry, GitHub Actions for the nightly sync and test suite (1,200+ unit tests, Playwright end to end, an RLS suite against a seeded database). Handed over on client-owned infrastructure with training, a plain-English data explainer and runbooks.</p>
+</div></section>
+
+<section id="cases"><div class="wrap">
+  <div class="eyebrow">Case studies</div>
+  <h2>Six engagements, one shape</h2>
+  <p class="sub">Client, problem, what was built, tools, outcome. Where a figure is an estimate or a projection it says so; measured results replace those at each project's close.</p>
+  <div class="grid2">
+
+    <article class="card" id="cs-dashboard">
+      <h3>Operations dashboard <span class="badge est">Estimated</span></h3>
+      <div class="who">Caulking subcontractor · Melbourne, Adelaide, Brisbane · 25 staff</div>
+      <dl><dt>Problem</dt><dd>Managers rebuilt the state of the business by hand each week from four tools; the weekly finance report alone was an hour per state, the monthly report took two to five days, and data completeness was policed daily.</dd>
+      <dt>Built</dt><dd>The production application above, plus nightly import from the team's sheets and Notion, write-back of manager actions, and a sync panel that explains faults in plain language.</dd></dl>
+      <div class="tools"><span>Next.js</span><span>Supabase</span><span>Drizzle</span><span>Vercel</span><span>Sentry</span><span>GitHub Actions</span><span>Google Sheets API</span><span>Notion API</span></div>
+      <div class="outcome">About 10 hours a week of manager time recovered across three managers (estimate from the discovery calls; measured at project close).</div>
+    </article>
+
+    <article class="card" id="cs-strategy">
+      <h3>Automation strategy report <span class="badge delivered">Delivered</span></h3>
+      <div class="who">Same client · operations, hiring, finance, property, marketing</div>
+      <dl><dt>Problem</dt><dd>Thirteen nominated manual tasks, no view of which were worth automating first or what they cost.</dd>
+      <dt>Built</dt><dd>Discovery across the founder, the operations lead and the VA team, a manual-hours-by-function baseline, then 21 automations each with the current process, the recommended approach and an implementation outline, scored on impact (45%), return (35%) and ease (20%) and phased.</dd></dl>
+      <div class="tools"><span>Make</span><span>Playwright</span><span>Xero API</span><span>Gmail API</span><span>Claude API</span><span>Go High Level</span></div>
+      <div class="outcome">21 automations mapped; 140+ hours a month of manual work identified, about $16,800 a year in recovered capacity.</div>
+    </article>
+
+    <article class="card" id="cs-barre">
+      <h3>Speed to lead, CRM and sales process <span class="badge wip">In progress · projected</span></h3>
+      <div class="who">Fitness education provider · four sales reps · HubSpot, WhatsApp, JustCall</div>
+      <dl><dt>Problem</dt><dd>About 4,500 leads a month, all worked in one manual queue. Median first response 5.4 days; the largest source waited 15.7 days. 24% of leads (Australian and website) produced 85% of enrolments and waited behind the rest.</dd>
+      <dt>Built</dt><dd>Funnel and response-time analysis from the CRM, routing by source and country at creation, automated first touch inside five minutes for every form, unowned-lead alerts, after-hours WhatsApp and SMS response, and a same-day human rule for the high-yield segment.</dd></dl>
+      <div class="tools"><span>HubSpot</span><span>WhatsApp Business / Wati</span><span>JustCall</span><span>Claude API</span><span>Python</span></div>
+      <div class="outcome">Projected AUD 15k to 30k a month in additional enrolments (AUD 180k to 360k a year) from cutting first response from a 5.4 day median to under 10 minutes, plus about AUD 29k of one-off recovery from unanswered and unowned leads. <span class="badge est">Projected</span> Engagement in progress; measured results replace this figure at completion.</div>
+    </article>
+
+    <article class="card" id="cs-destino">
+      <h3>Law firm operating system <span class="badge delivered">Delivered</span></h3>
+      <div class="who">Immigration law practice · Brisbane</div>
+      <dl><dt>Problem</dt><dd>Matter tracking, intake and billing lived in disconnected tools and people's heads; billable time was leaking.</dd>
+      <dt>Built</dt><dd>A comprehensive Airtable operating system for matters, contacts and billing with automated intake and reporting.</dd></dl>
+      <div class="tools"><span>Airtable</span><span>Make</span><span>Google Workspace</span></div>
+      <div class="outcome">48 to 50 hours a week recovered for the team; $910K a year in recoverable billable time identified.</div>
+    </article>
+
+    <article class="card" id="cs-vibe">
+      <h3>Lead generation and content automation <span class="badge delivered">Delivered</span></h3>
+      <div class="who">Online coaching business</div>
+      <dl><dt>Problem</dt><dd>Lead capture and content production depended on the founder's hours.</dd>
+      <dt>Built</dt><dd>Automated lead generation and content creation pipelines with no manual step between capture and enrolment.</dd></dl>
+      <div class="tools"><span>Make</span><span>Claude API</span><span>Airtable</span></div>
+      <div class="outcome">$165K in course enrolments within 60 days with zero manual input.</div>
+    </article>
+
+    <article class="card" id="cs-supernature">
+      <h3>Client management and reporting <span class="badge delivered">Delivered</span></h3>
+      <div class="who">Artist management agency</div>
+      <dl><dt>Problem</dt><dd>Weekly client reporting and management admin were assembled by hand.</dd>
+      <dt>Built</dt><dd>Automated client management workflows and fully automated reporting.</dd></dl>
+      <div class="tools"><span>Airtable</span><span>Make</span><span>Google Workspace</span></div>
+      <div class="outcome">25 hours a week saved; 100% of reporting automated.</div>
+    </article>
+  </div>
+
+  <div class="grid2" style="margin-top:18px">
+    <div class="chart">
+      <h4>Enrolment rate by first-response delay</h4>
+      <p>Australian leads, from the client's CRM. The cliff is at 24 hours, which is why the target is a same-day human touch on top of an automated first response inside five minutes.</p>
+      <svg viewBox="0 0 420 190" width="100%" role="img" aria-label="Bar chart: enrolment rate 7.8% under one hour, 7.3% at 4 to 24 hours, 5.3% at 1 to 3 days, 3.1% at 3 to 7 days">
+        <g fill="#98a2b8" font-size="11">
+          <text x="60" y="176" text-anchor="middle">under 1h</text><text x="150" y="176" text-anchor="middle">4 to 24h</text><text x="240" y="176" text-anchor="middle">1 to 3d</text><text x="330" y="176" text-anchor="middle">3 to 7d</text>
+        </g>
+        <g>
+          <rect x="35" y="30" width="50" height="126" rx="5" fill="#f4703b"/><text x="60" y="22" text-anchor="middle" fill="#e6e9ef" font-size="12" font-weight="600">7.8%</text>
+          <rect x="125" y="38" width="50" height="118" rx="5" fill="#f4703b"/><text x="150" y="30" text-anchor="middle" fill="#e6e9ef" font-size="12" font-weight="600">7.3%</text>
+          <rect x="215" y="70" width="50" height="86" rx="5" fill="#5b6b8a"/><text x="240" y="62" text-anchor="middle" fill="#e6e9ef" font-size="12" font-weight="600">5.3%</text>
+          <rect x="305" y="106" width="50" height="50" rx="5" fill="#5b6b8a"/><text x="330" y="98" text-anchor="middle" fill="#e6e9ef" font-size="12" font-weight="600">3.1%</text>
+        </g>
+        <line x1="30" y1="156" x2="390" y2="156" stroke="#243047"/>
+      </svg>
+    </div>
+    <div class="chart">
+      <h4>Where the enrolments come from</h4>
+      <p>24% of leads (Australian and website) produce 85% of enrolments. Routing by source and country at the moment of creation is the first fix, and it needs no AI.</p>
+      <svg viewBox="0 0 420 190" width="100%" role="img" aria-label="Two stacked bars: share of leads 24% high-yield versus 76% other; share of enrolments 85% high-yield versus 15% other">
+        <g fill="#98a2b8" font-size="11"><text x="20" y="58">Share of leads</text><text x="20" y="128">Share of enrolments</text></g>
+        <rect x="20" y="64" width="86" height="26" rx="4" fill="#f4703b"/><rect x="106" y="64" width="274" height="26" rx="4" fill="#2b3550"/>
+        <text x="63" y="82" text-anchor="middle" fill="#fff" font-size="12" font-weight="600">24%</text><text x="243" y="82" text-anchor="middle" fill="#cbd2e0" font-size="12">76%</text>
+        <rect x="20" y="134" width="306" height="26" rx="4" fill="#f4703b"/><rect x="326" y="134" width="54" height="26" rx="4" fill="#2b3550"/>
+        <text x="173" y="152" text-anchor="middle" fill="#fff" font-size="12" font-weight="600">85%</text><text x="353" y="152" text-anchor="middle" fill="#cbd2e0" font-size="12">15%</text>
+        <g font-size="11"><rect x="20" y="20" width="10" height="10" fill="#f4703b"/><text x="36" y="29" fill="#98a2b8">Australian and website leads</text><rect x="210" y="20" width="10" height="10" fill="#2b3550"/><text x="226" y="29" fill="#98a2b8">Everything else</text></g>
+      </svg>
+    </div>
+  </div>
+</div></section>
+
+<section id="tools"><div class="wrap">
+  <div class="eyebrow">Tools to evidence</div>
+  <h2>Every tool on my CV, tied to where it was used</h2>
+  <p class="sub">Click through to the engagement. A tool without a card is not listed.</p>
+  <div class="toolgrid">
+    <a href="#flagship"><b>Next.js and TypeScript</b><small>Operations dashboard</small></a>
+    <a href="#flagship"><b>Supabase: Postgres, Auth, RLS</b><small>Operations dashboard</small></a>
+    <a href="#flagship"><b>Drizzle ORM</b><small>Operations dashboard</small></a>
+    <a href="#flagship"><b>Vercel</b><small>Operations dashboard</small></a>
+    <a href="#flagship"><b>Sentry and uptime monitoring</b><small>Operations dashboard</small></a>
+    <a href="#flagship"><b>GitHub Actions</b><small>Dashboard sync and tests; email optimiser harvest</small></a>
+    <a href="#flagship"><b>Playwright and Vitest</b><small>Dashboard test suite; Tradify browser automation</small></a>
+    <a href="#cs-dashboard"><b>Google Sheets and Drive APIs</b><small>Dashboard import and write-back</small></a>
+    <a href="#cs-dashboard"><b>Notion API</b><small>Dashboard trainee reviews</small></a>
+    <a href="#cs-barre"><b>HubSpot</b><small>Speed to lead and CRM</small></a>
+    <a href="#cs-barre"><b>WhatsApp Business and JustCall</b><small>After-hours response</small></a>
+    <a href="#cs-destino"><b>Airtable</b><small>Law firm OS; client reporting</small></a>
+    <a href="#cs-strategy"><b>Make</b><small>Strategy report; lead generation; reporting</small></a>
+    <a href="#own"><b>n8n</b><small>Email flows and lead automation</small></a>
+    <a href="#cs-vibe"><b>Claude API and agents</b><small>Content automation; CRM routines; this pipeline</small></a>
+    <a href="#cs-strategy"><b>Xero API</b><small>Finance reporting automations</small></a>
+    <a href="#own"><b>LinkedIn Sales Navigator</b><small>Cold email sourcing</small></a>
+    <a href="#own"><b>Python</b><small>Email optimiser; CRM routines; analysis</small></a>
+  </div>
+</div></section>
+
+<section id="own"><div class="wrap">
+  <div class="eyebrow">Systems I run myself</div>
+  <h2>Two systems with no client, built because I use them every day</h2>
+  <p class="sub">No revenue claims here. They are the clearest evidence that I reach for these tools by habit, not on request.</p>
+  <div class="grid2">
+    <article class="card">
+      <h3>Cold email optimiser</h3>
+      <dl><dt>What</dt><dd>Sources leads from LinkedIn Sales Navigator, enriches and verifies emails, runs a multi-armed bandit over email variants so the better copy gets more sends, and harvests results on a daily self-pacing schedule.</dd>
+      <dt>Shape</dt><dd>Sales Navigator search → export → enrichment → variant allocation (bandit) → sending platform → reply harvest → Supabase → next allocation.</dd></dl>
+      <div class="tools"><span>Python</span><span>GitHub Actions</span><span>Supabase</span><span>Sales Navigator</span><span>Instantly</span></div>
+    </article>
+    <article class="card">
+      <h3>CRM lifecycle automation</h3>
+      <dl><dt>What</dt><dd>Proposals sync from the proposal tool into the CRM, follow-up emails are drafted each weekday morning in my voice for every outstanding proposal and every contact due for a check-in, and a daily routine keeps last-contact dates fresh from the inbox. Everything is a draft for one-tap review; nothing sends itself.</dd>
+      <dt>Shape</dt><dd>Scheduled cloud routines → Supabase CRM → Gmail drafts, with a registry that lets any routine be switched off independently.</dd></dl>
+      <div class="tools"><span>Claude API</span><span>Supabase</span><span>Gmail API</span><span>Qwilr</span><span>Python</span></div>
+    </article>
+  </div>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <div class="eyebrow">How I work</div>
+  <h2>Four stages, one real artifact from each</h2>
+  <p class="sub">Excerpts from the trade-business engagement above, names removed.</p>
+  <div class="steps">
+    <div class="step"><div class="n">01</div><h3>Discovery</h3><p>Prep notes before the first call. The point of the call is to ask, not to solve.</p>
+<div class="excerpt">QUICK REFERENCE
+- Founded 2017. Pure-play caulking subcontractor.
+- B2B: repeat-account builder relationships.
+- ~25 staff across two cities, VA team remote. Third city opening.
+- Differentiator: 1,000+ hours on-site training per caulker.
+- Stack: Make, ChatGPT, Go High Level, Pipedrive, Notion, Xero, Tradify (no API).
+
+MINDSET REMINDERS
+- Stop solving, start asking. Say "tell me more about that."
+- Don't give away the report. "That's exactly what I'll cover once I've done the full research."
+- Opinions are the product. "It depends" is not an answer.
+- Own the room. Set the agenda. Bring tangents back.</div></div>
+
+    <div class="step"><div class="n">02</div><h3>Mapping</h3><p>A manual-hours baseline before any recommendation, so every automation has a cost to beat.</p>
+<div class="excerpt"><table><tr><th>Function</th><th>Hrs/mo</th></tr>
+<tr><td>Invoice report attachment</td><td>32+</td></tr>
+<tr><td>Property email management</td><td>40</td></tr>
+<tr><td>Monthly finance report</td><td>20+</td></tr>
+<tr><td>Cold site lead extraction</td><td>12+</td></tr>
+<tr><td>Prepayment and overdue follow-ups</td><td>10+</td></tr>
+<tr><td>Weekly finance report (x2 states)</td><td>8</td></tr>
+<tr><td>Candidate filtering review</td><td>8+</td></tr>
+<tr><td>Under-$800 checks</td><td>4+</td></tr>
+<tr><td>Other</td><td>6+</td></tr>
+<tr><td><b>Total</b></td><td><b>140+</b></td></tr></table>
+<div style="margin-top:8px;font-family:Inter,system-ui,sans-serif">Each of the 21 automations then scored: impact 45%, return 35%, ease 20%. Phase 1 is the two immediate fixes; phase 2 builds the browser-automation engine three later automations depend on.</div></div></div>
+
+    <div class="step"><div class="n">03</div><h3>Build</h3><p>The access model, from the architecture document written before the first line of code.</p>
+<div class="excerpt prose">Treat the auth provider as an identity issuer only. Keep our own organisations, memberships and role tables as the source of truth for authorisation, so the provider can be swapped later without touching org or role data.<br><br>Access is scoped by city and role in row-level security: a manager sees only their city's rows; the CEO and admin see all cities. The check runs on every request in the database, so a fault in a screen cannot leak another city's data.<br><br>Data flows one way into the dashboard; it becomes the source of truth. Nothing syncs back and forth, so nothing falls out of step. Everything hosted in Sydney.</div></div>
+
+    <div class="step"><div class="n">04</div><h3>Handover</h3><p>The data explainer written for the managers, not for developers. Understanding has to transfer, not just the code.</p>
+<div class="excerpt prose">"The way to picture it: a filing cabinet with a security guard. Each drawer is a city. Each manager's key opens only their own drawer. The guard checks the key on every single request, not just once at the door."<br><br>"Your rules are settings, not code. The check-in cadence and the health thresholds are stored as adjustable settings, so changing them later does not require a developer."<br><br>"There are two gross-profit figures on the dashboard, and they answer different questions. A caulker's figure means the jobs this person worked on produced $X. It does not mean they generated $X alone, so those figures are never totalled."</div></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="cta">
+    <a href="mailto:charlie@zynwise.com">Email Charlie</a>
+    <a class="ghost" href="https://zynwise.com" rel="noopener">zynwise.com</a>
+  </div>
+  <p class="note">Dashboard screens show the delivered application with fictional names and randomised figures. Figures marked estimated or projected are labelled as such and are replaced by measured results at each project's close. Built and maintained by Charlie Jessey.</p>
+</div></footer>
+
+<script>
+(function(){
+  var u="https://script.google.com/macros/s/AKfycbxn3cozbhEIy1bRdKxOzGt3XcgQ48RtyoDNAXC6oKSDHwy8ojRxyZxkw-nDi5uvxbxK/exec";
+  var p=new URLSearchParams(window.location.search);
+  var ref=p.get("ref")||"direct";
+  var tz="";try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone}catch(e){}
+  var dev=/Mobi|Android/i.test(navigator.userAgent)?"mobile":"desktop";
+  var q="slug=portfolio&company_name="+encodeURIComponent("portfolio")+"&demo_type=portfolio&ref="+ref+"&timezone="+encodeURIComponent(tz)+"&device="+dev;
+  new Image().src=u+"?"+q+"&event=pageview";
+  var start=Date.now(),maxScroll=0,sent=false,leaveTimer=null;
+  window.addEventListener("scroll",function(){var s=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight)*100;if(s>maxScroll)maxScroll=Math.round(s);});
+  function sendLeave(){if(sent)return;sent=true;var dur=Math.round((Date.now()-start)/1000);fetch(u+"?"+q+"&event=leave&duration="+dur+"&scroll_depth="+maxScroll,{method:"GET",keepalive:true}).catch(function(){});}
+  document.addEventListener("visibilitychange",function(){if(document.visibilityState==="hidden"){leaveTimer=setTimeout(sendLeave,30000);}else if(leaveTimer){clearTimeout(leaveTimer);leaveTimer=null;}});
+  window.addEventListener("pagehide",function(){if(leaveTimer)clearTimeout(leaveTimer);sendLeave();});
+})();
+</script>
+</body>
+</html>
