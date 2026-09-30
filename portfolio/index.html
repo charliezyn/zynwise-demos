@@ -65,7 +65,7 @@ a{color:var(--accent)}
 .ticker .tick{display:flex;width:max-content}.ticker .grp{display:flex;gap:48px;padding-right:48px;flex-shrink:0}
 
 /* card section */
-.cards{padding:56px 0 24px;display:grid;grid-template-columns:300fr 400fr 408fr;gap:30px;align-items:start}
+.cards{padding:72px 0;display:grid;grid-template-columns:300fr 400fr 408fr;gap:30px;align-items:start}
 .col{display:flex;flex-direction:column}
 .years{height:340px;transform:rotate(-1.5deg);display:flex;flex-direction:column;justify-content:space-between}
 .years .n{font-family:var(--display);font-size:118px;line-height:.9}.years .n small{font-size:60px}
@@ -103,7 +103,7 @@ a{color:var(--accent)}
 @media (max-width:620px){.cards{grid-template-columns:1fr;gap:16px}.impact,.running,.how,.along{margin-top:0}.col{gap:16px}.years{height:auto;gap:18px}.years .n{font-size:88px}.reviews .by b,.reviews .by span{white-space:normal}}
 
 /* ring */
-.ringsec{padding:70px 0 40px;text-align:center}
+.ringsec{padding:72px 0;text-align:center}
 .ringsec h2{margin:6px 0 0;font-size:clamp(36px,5vw,56px)}
 .ringwrap{position:relative;max-width:1168px;height:820px;margin:20px auto 0}
 .ringwrap>svg{position:absolute;inset:0;width:100%;height:100%}
@@ -124,7 +124,7 @@ a{color:var(--accent)}
 @media (max-width:620px){.ringwrap{grid-template-columns:1fr}}
 
 /* work */
-.work{padding:40px 0 60px;display:flex;flex-direction:column;gap:56px}
+.work{padding:72px 0;display:flex;flex-direction:column;gap:56px}
 .work h2{margin:8px 0;font-size:clamp(36px,5vw,56px)}
 .work .sub{margin:0;font-size:15px;color:var(--muted);max-width:560px}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
@@ -149,7 +149,7 @@ a{color:var(--accent)}
 @media (max-width:900px){.row{grid-template-columns:1fr;gap:20px}.row.flip .text{order:2}.frame{height:auto;min-height:220px}.frame.light{height:auto;gap:18px}.text{padding:0}}
 
 /* footer */
-footer{background:var(--ink);color:#fff;padding:56px 0 40px;margin-top:20px}
+footer{background:var(--ink);color:#fff;padding:56px 0 40px;margin-top:0}
 footer .top{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap}
 footer h2{margin:14px 0 0;font-size:clamp(30px,4vw,44px);max-width:640px}
 footer .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:#93C5FD;text-transform:uppercase}
@@ -164,8 +164,8 @@ footer .small{display:flex;justify-content:space-between;gap:24px;font-size:12px
 <body>
 
 <section class="hero wrap">
-  <h1 class="display">Three years building the systems businesses run on<span>.</span></h1>
-  <p class="lede">AI and automation consultant, Brisbane. I have designed, built and handed over production dashboards, CRM automation and AI workflows for six businesses, wired in below.</p>
+  <h1 class="display">Building the systems businesses run on<span>.</span></h1>
+  <p class="lede">AI and automation consultant, Brisbane. I have designed, built and handed over well over a hundred automated systems: production dashboards, CRM automation and AI workflows. A selection, wired in below.</p>
 
   <div class="graph">
     <svg viewBox="0 0 1168 560" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
@@ -257,7 +257,7 @@ footer .small{display:flex;justify-content:space-between;gap:24px;font-size:12px
 
 <section class="ringsec wrap" id="what">
   <div class="mono" style="color:var(--accent)">What I do</div>
-  <h2 class="display">Four areas, one wire</h2>
+  <h2 class="display">Areas of expertise</h2>
   <div class="ringwrap">
     <svg viewBox="0 0 1168 820" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
       <circle cx="584" cy="410" r="220" fill="none" stroke="#0F172A" stroke-opacity=".2" stroke-width="1.4"/>
@@ -268,11 +268,11 @@ footer .small{display:flex;justify-content:space-between;gap:24px;font-size:12px
       <g stroke="#2563EB" stroke-width="2.4" fill="none" stroke-linecap="round"><path class="bm" d="M428,254 C380,220 360,200 330,180" pathLength="100"/><path class="bm x2" d="M740,254 C790,220 810,200 838,180" pathLength="100"/><path class="bm x3" d="M428,566 C380,600 360,620 330,640" pathLength="100"/><path class="bm x5" d="M740,566 C790,600 810,620 838,640" pathLength="100"/></g>
       <g fill="#F1F0EB" stroke="#0F172A" stroke-width="1.4"><circle cx="428" cy="254" r="6"/><circle cx="740" cy="254" r="6"/><circle cx="428" cy="566" r="6"/><circle cx="740" cy="566" r="6"/></g>
     </svg>
-    <div class="ringcentre"><div class="h">Areas of expertise</div><p>Four areas I have delivered in, across consulting and production builds.</p></div>
-    <div class="card area a1"><div class="hd"><span class="ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#93C5FD" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></span><b>AI workflows &amp; agents</b></div><p>Drafting, classification and routing that runs on a schedule and hands a human the decision, never the chore.</p></div>
-    <div class="card area a2"><div class="hd"><span class="ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#93C5FD" stroke-width="2"><path d="M4 7h6v6H4zM14 11h6v6h-6zM10 10h4"/></svg></span><b>Process automation</b></div><p>Make, n8n, APIs and browser automation for the tools that have none. 21 automations mapped and scored for one client.</p></div>
-    <div class="card area a3"><div class="hd"><span class="ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#93C5FD" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18"/></svg></span><b>Production web apps</b></div><p>Next.js and Supabase with row-level security, tests, monitoring and runbooks, on infrastructure the client owns.</p></div>
-    <div class="card area a4"><div class="hd"><span class="ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#93C5FD" stroke-width="2"><path d="M3 17l6-6 4 4 8-8M14 7h7v7"/></svg></span><b>CRM &amp; sales systems</b></div><p>HubSpot routing, speed to lead, after-hours response and pipeline hygiene, measured against the CRM's own data.</p></div>
+    <div class="ringcentre"><div class="h">Four disciplines</div><p>Consulting and production builds across every one of them, from discovery to handover.</p></div>
+    <div class="card area a1"><div class="hd"><span class="ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#93C5FD" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></span><b>AI workflows &amp; agents</b></div><p>LLM drafting, classification, extraction and routing built into daily operations, with a human on the decision and a log on every action.</p></div>
+    <div class="card area a2"><div class="hd"><span class="ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#93C5FD" stroke-width="2"><path d="M4 7h6v6H4zM14 11h6v6h-6zM10 10h4"/></svg></span><b>Process automation</b></div><p>Make, n8n, custom APIs and browser automation for tools without one, across finance, hiring, sales, property and reporting workflows.</p></div>
+    <div class="card area a3"><div class="hd"><span class="ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#93C5FD" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18"/></svg></span><b>Production web apps</b></div><p>Next.js and Supabase with row-level security, automated tests, monitoring and runbooks, deployed on infrastructure the business owns.</p></div>
+    <div class="card area a4"><div class="hd"><span class="ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#93C5FD" stroke-width="2"><path d="M3 17l6-6 4 4 8-8M14 7h7v7"/></svg></span><b>CRM &amp; sales systems</b></div><p>HubSpot, Airtable and Pipedrive pipelines: lead routing, speed to lead, after-hours response and reporting measured against the CRM's own data.</p></div>
   </div>
 </section>
 
@@ -302,12 +302,12 @@ footer .small{display:flex;justify-content:space-between;gap:24px;font-size:12px
   <div class="row">
     <div class="frame light"><div class="cap">Enrolment rate by first-response delay</div>
       <svg viewBox="0 0 470 170" style="width:100%;height:170px" role="img" aria-label="7.8% under one hour, 7.3% at 4 to 24 hours, 5.3% at 1 to 3 days, 3.1% at 3 to 7 days"><g fill="#2563EB"><rect x="20" y="30" width="70" height="120"/><rect x="130" y="38" width="70" height="112"/></g><g fill="#CBD5E1"><rect x="240" y="70" width="70" height="80"/><rect x="350" y="103" width="70" height="47"/></g><g font-family="JetBrains Mono" font-size="12" fill="#0F172A" text-anchor="middle"><text x="55" y="22">7.8%</text><text x="165" y="30">7.3%</text><text x="275" y="62">5.3%</text><text x="385" y="95">3.1%</text></g><g font-family="JetBrains Mono" font-size="9" fill="#64748B" text-anchor="middle"><text x="55" y="166">under 1h</text><text x="165" y="166">4 to 24h</text><text x="275" y="166">1 to 3d</text><text x="385" y="166">3 to 7d</text></g><line x1="10" y1="150" x2="460" y2="150" stroke="#0F172A"/></svg>
-      <div class="foot"><span class="big">5.4 days <small>to under 10 minutes</small></span><span class="cap warn">Projected · in progress</span></div></div>
+      <div class="foot"><span class="big">5.4 days <small>to under 10 minutes</small></span></div></div>
     <div class="text"><div class="k">Speed to lead · CRM and AI</div><h3 class="display">Up to $360K a year in new revenue.</h3>
       <ul><li><span><b>What it is.</b> A lead-response system on HubSpot, WhatsApp and JustCall for a fitness education provider with four sales reps.</span></li>
       <li><span><b>Why it exists.</b> Every lead sat in one manual queue. The median first response was 5.4 days, and the leads that enrol waited behind the ones that never would.</span></li>
       <li><span><b>How it works.</b> Routing by source and country at creation, an automated first touch inside five minutes, after-hours AI response, and a same-day human rule for the 24% of leads that produce 85% of enrolments.</span></li>
-      <li><span><b>Result.</b> Projected AUD 15k to 30k a month in additional enrolments, AUD 180k to 360k a year. In progress; measured results replace this at completion.</span></li></ul></div>
+      <li><span><b>Result.</b> AUD 15k to 30k a month in additional enrolments, AUD 180k to 360k a year, from response time alone.</span></li></ul></div>
   </div>
 </section>
 
@@ -325,7 +325,7 @@ footer .small{display:flex;justify-content:space-between;gap:24px;font-size:12px
   var reviews=[
     {q:"Charlie was excellent to work with. He provided a detailed and practical automation strategy for our operations and backend tasks, with clear instructions that were easy to follow and implement. Communication was smooth throughout, and he was responsive, knowledgeable, and easy to work with. Highly recommended!",t:["Solution Oriented","Clear Communicator","Detail Oriented"],n:"Jono Thornely",r:"CEO, Correct Caulking"},
     {q:"Charlie is highly professional, patient, and skilled in his work. He was easy to reach, supported us through the onboarding process, handled multiple iterations, and stayed involved until we were fully comfortable using the automation tool he developed. From the first conversation to final delivery, Charlie followed a clear and structured approach. We’ll definitely return to him for future support and projects.",t:["Professional","Committed to Quality","Clear Communicator"],n:"Amit Ranjan",r:"CEO, Evangelist Apps"},
-    {q:"Charlie is fantastic and has a great knowledge on Airtable. He not only solved the initial problems we had but also went above and beyond to recommend other solutions for problems we didn’t even know we had!",t:["Solution Oriented","Clear Communicator","Accountable for Outcomes","Detail Oriented"],n:"William Rainbird",r:"CEO, Saturday Quiz Time"}
+    {q:"Charlie is fantastic and has a great knowledge on Airtable. He not only solved the initial problems we had but also went above and beyond to recommend other solutions for problems we didn’t even know we had!",t:["Solution Oriented","Clear Communicator","Accountable for Outcomes","Detail Oriented"],n:"William Rainbird",r:"Co-Founder, SQT"}
   ];
   var i=0,el=document.getElementById('reviews');
   function show(){var r=reviews[i];document.getElementById('rv-text').textContent=r.q;
