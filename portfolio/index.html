@@ -337,8 +337,9 @@ footer .small{display:flex;justify-content:space-between;gap:24px;font-size:12px
   el.querySelector('.next').addEventListener('click',function(){i=(i+1)%reviews.length;show();});
   show();
 
-  // Ticker: size both groups to a whole pixel (fraction absorbed in the trailing gap) and slide exactly one group per cycle, so the loop has no seam.
-  (function(){var tick=document.querySelector('.ticker .tick');if(!tick||!tick.animate)return;var grps=tick.querySelectorAll('.grp');var raw=grps[0].getBoundingClientRect().width;var w=Math.ceil(raw);grps.forEach(function(g){g.style.width=w+'px';g.style.paddingRight=(48+(w-raw))+'px';});tick.classList.add('js');tick.animate([{transform:'translateX(0)'},{transform:'translateX(-'+w+'px)'}],{duration:w*19,iterations:Infinity,easing:'linear'});})();
+  // Ticker: once fonts are in, size both groups to a whole pixel (fraction absorbed in the trailing gap) and slide exactly one group per cycle, so the loop has no seam.
+  function seamless(){var tick=document.querySelector('.ticker .tick');if(!tick||!tick.animate)return;var grps=tick.querySelectorAll('.grp');grps.forEach(function(g){g.style.width='';g.style.paddingRight='';});var raw=grps[0].getBoundingClientRect().width;var w=Math.ceil(raw);grps.forEach(function(g){g.style.width=w+'px';g.style.paddingRight=(48+(w-raw))+'px';});tick.classList.add('js');tick.getAnimations().forEach(function(a){a.cancel();});tick.animate([{transform:'translateX(0)'},{transform:'translateX(-'+w+'px)'}],{duration:w*19,iterations:Infinity,easing:'linear'});}
+  if(document.fonts&&document.fonts.ready){document.fonts.ready.then(seamless);}else{seamless();}
 
   // Set when the clickable demo is live; until then the dashboard frame is a plain image.
   var DEMO_URL="";var d=document.getElementById('demo-link');
