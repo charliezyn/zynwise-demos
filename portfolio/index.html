@@ -28,7 +28,7 @@ a{color:var(--accent)}
 @keyframes ring{0%{stroke-dashoffset:0}100%{stroke-dashoffset:-100}}
 .ring{stroke-dasharray:22 78;animation:ring 6s linear infinite}.ring.r2{stroke-dasharray:10 90;animation-duration:9s;animation-direction:reverse}
 @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-.tick{animation:ticker 26s linear infinite}.tick.js{animation:none}
+.tick{animation:ticker 26s linear infinite}
 @keyframes glow{0%,100%{opacity:.5}50%{opacity:1}}.glow{animation:glow 2s ease-in-out infinite}
 @media (prefers-reduced-motion:reduce){.bm,.ring,.tick,.glow{animation:none}}
 
@@ -62,7 +62,7 @@ a{color:var(--accent)}
 /* ticker */
 .ticker-label{padding:34px 0 10px}.ticker-label .mono{font-size:10px}
 .ticker{overflow:hidden;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);background:var(--ink);color:#fff;padding:12px 0;font-family:var(--mono);font-size:12px;letter-spacing:.12em;white-space:nowrap}
-.ticker .tick{display:flex;width:max-content}.ticker .grp{display:flex;gap:48px;padding-right:48px;flex-shrink:0}
+.ticker .tick{display:flex;width:max-content;will-change:transform}.ticker .grp{display:flex;gap:48px;padding-right:48px;flex-shrink:0;white-space:nowrap}
 
 /* card section */
 .cards{padding:72px 0;display:grid;grid-template-columns:300fr 400fr 408fr;gap:30px;align-items:start}
@@ -280,12 +280,12 @@ footer .small{display:flex;justify-content:space-between;gap:24px;font-size:12px
   <div><div class="mono" style="color:var(--accent)">Selected work</div><h2 class="display">Systems I have shipped</h2><p class="sub">Three recent engagements, each taken from the first conversation through to a system the team uses every day.</p></div>
 
   <div class="row">
-    <a class="frame" id="demo-link" aria-label="Operations dashboard, sample data"><img src="assets/admin-home.jpg" alt="Operations dashboard overview, Meridian Construction demo" loading="lazy"><span class="badge">SAMPLE DATA</span></a>
+    <a class="frame" id="demo-link" aria-label="Operations dashboard, sample data"><img src="assets/admin-home-mc.jpg" alt="Operations dashboard overview, Meridian Construction demo" loading="lazy"><span class="badge">SAMPLE DATA</span></a>
     <div class="text"><div class="k">Operations dashboard · Production web app</div><h3 class="display">Recovered ~500 hours a year.</h3>
       <ul><li><span><b>What it is.</b> A production dashboard for a three-city trade business: builder check-ins, contractor profiles, four sales queues and gross profit in one place.</span></li>
       <li><span><b>Why it exists.</b> Managers were rebuilding the week by hand from Tradify, Xero, Notion and Sheets, and the numbers rarely agreed.</span></li>
       <li><span><b>What it does now.</b> Nightly sync from the tools the team already uses, each city walled off in the database, in daily use by three managers and the CEO.</span></li>
-      <li><span><b>Result.</b> About 10 hours a week of manager time back, measured at project close.</span></li></ul></div>
+      <li><span><b>Result.</b> About 10 hours a week of manager time back, measured at project close.</span></li></ul><a class="btn primary" id="demo-btn" href="https://ops-dashboard-demo-alpha.vercel.app/" target="_blank" rel="noopener" style="align-self:flex-start;margin-top:4px">See the demo</a></div>
   </div>
 
   <div class="row flip">
@@ -337,9 +337,6 @@ footer .small{display:flex;justify-content:space-between;gap:24px;font-size:12px
   el.querySelector('.next').addEventListener('click',function(){i=(i+1)%reviews.length;show();});
   show();
 
-  // Ticker: once fonts are in, size both groups to a whole pixel (fraction absorbed in the trailing gap) and slide exactly one group per cycle, so the loop has no seam.
-  function seamless(){var tick=document.querySelector('.ticker .tick');if(!tick||!tick.animate)return;var grps=tick.querySelectorAll('.grp');grps.forEach(function(g){g.style.width='';g.style.paddingRight='';});var raw=grps[0].getBoundingClientRect().width;var w=Math.ceil(raw);grps.forEach(function(g){g.style.width=w+'px';g.style.paddingRight=(48+(w-raw))+'px';});tick.classList.add('js');tick.getAnimations().forEach(function(a){a.cancel();});tick.animate([{transform:'translateX(0)'},{transform:'translateX(-'+w+'px)'}],{duration:w*19,iterations:Infinity,easing:'linear'});}
-  if(document.fonts&&document.fonts.ready){document.fonts.ready.then(seamless);}else{seamless();}
 
   // Set when the clickable demo is live; until then the dashboard frame is a plain image.
   var DEMO_URL="https://ops-dashboard-demo-alpha.vercel.app/";var d=document.getElementById('demo-link');
