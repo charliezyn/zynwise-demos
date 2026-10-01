@@ -28,7 +28,7 @@ a{color:var(--accent)}
 @keyframes ring{0%{stroke-dashoffset:0}100%{stroke-dashoffset:-100}}
 .ring{stroke-dasharray:22 78;animation:ring 6s linear infinite}.ring.r2{stroke-dasharray:10 90;animation-duration:9s;animation-direction:reverse}
 @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-.tick{animation:ticker 26s linear infinite}
+.tick{animation:ticker 26s linear infinite}.tick.js{animation:none}
 @keyframes glow{0%,100%{opacity:.5}50%{opacity:1}}.glow{animation:glow 2s ease-in-out infinite}
 @media (prefers-reduced-motion:reduce){.bm,.ring,.tick,.glow{animation:none}}
 
@@ -204,7 +204,7 @@ footer .small{display:flex;justify-content:space-between;gap:24px;font-size:12px
   <div class="cta"><a class="btn primary" href="#work">See the work</a><a class="btn ghost" href="#contact">Get in touch</a></div>
 </section>
 
-<div class="wrap ticker-label" style="padding-left:calc(16px + 22%)"><span class="mono">Platforms I've worked in</span></div>
+<div class="wrap ticker-label" style="padding-left:calc(16px + 9%)"><span class="mono">Platforms I've worked in</span></div>
 <div class="ticker" aria-label="Platforms"><div class="tick"><div class="grp"><span>NEXT.JS</span><span>SUPABASE</span><span>POSTGRES + RLS</span><span>VERCEL</span><span>HUBSPOT</span><span>AIRTABLE</span><span>MAKE</span><span>N8N</span><span>CLAUDE API</span><span>PYTHON</span><span>GITHUB ACTIONS</span><span>PLAYWRIGHT</span></div><div class="grp"><span>NEXT.JS</span><span>SUPABASE</span><span>POSTGRES + RLS</span><span>VERCEL</span><span>HUBSPOT</span><span>AIRTABLE</span><span>MAKE</span><span>N8N</span><span>CLAUDE API</span><span>PYTHON</span><span>GITHUB ACTIONS</span><span>PLAYWRIGHT</span></div></div></div>
 
 <section class="cards wrap">
@@ -336,6 +336,9 @@ footer .small{display:flex;justify-content:space-between;gap:24px;font-size:12px
   el.querySelector('.prev').addEventListener('click',function(){i=(i-1+reviews.length)%reviews.length;show();});
   el.querySelector('.next').addEventListener('click',function(){i=(i+1)%reviews.length;show();});
   show();
+
+  // Ticker: size both groups to a whole pixel (fraction absorbed in the trailing gap) and slide exactly one group per cycle, so the loop has no seam.
+  (function(){var tick=document.querySelector('.ticker .tick');if(!tick||!tick.animate)return;var grps=tick.querySelectorAll('.grp');var raw=grps[0].getBoundingClientRect().width;var w=Math.ceil(raw);grps.forEach(function(g){g.style.width=w+'px';g.style.paddingRight=(48+(w-raw))+'px';});tick.classList.add('js');tick.animate([{transform:'translateX(0)'},{transform:'translateX(-'+w+'px)'}],{duration:w*19,iterations:Infinity,easing:'linear'});})();
 
   // Set when the clickable demo is live; until then the dashboard frame is a plain image.
   var DEMO_URL="";var d=document.getElementById('demo-link');
